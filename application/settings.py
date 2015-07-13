@@ -11,7 +11,7 @@ DEBUG = True
 #TEMPLATE_DEBUG = DEBUG
 #TEMPLATE_DEBUG = False
 TEMPLATE_DEBUG = True
-ENVIRONMENT = "production"
+ENVIRONMENT = "development"
 
 # calculated paths for django and the site
 # used as starting points for various other paths
@@ -46,7 +46,7 @@ TIME_ZONE = 'Europe/Stockholm'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en'
 
-BASE_URL = 'www.bidpart.com'
+BASE_URL = 'blooming-peak-2351.herokuapp.com'
 
 DEAL_INVOICE_SENDER = ('lennart.sjoblom@bidpart.se', {
     'email': 'lennart.sjoblom@bidpart.se',
