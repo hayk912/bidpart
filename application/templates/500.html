@@ -1,0 +1,39 @@
+{% load static compress i18n %}
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bidpart</title>
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'core/css/icons.css' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/bootstrap/bootstrap.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/bootstrap_bidpart.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/accounts.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/sidebar.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/header.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/footer.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/forms.less' %}">
+
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/site-error.less' %}">
+    {% endcompress %}
+</head>
+<body>
+    <div id="site-error" class="container">
+        <div class="row">
+			<div class="span4">
+				<h1 class="icon" data-icon="&#xe011;"></h1>
+			</div>
+
+			<div class="span5">
+                <h1 class="status">500</h1>
+				<h1 class="description">
+					{% trans "Oops, something went very wrong." %}
+				</h1>
+				<p>{% trans "Our developers has just got an email about the error." %}</p>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
+

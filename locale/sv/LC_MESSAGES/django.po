@@ -1,0 +1,2076 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-10 15:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: application/dashboard.py:23
+msgid "Recent Actions"
+msgstr "Senaste Händelser"
+
+#: application/dashboard.py:85
+msgid "Users & Businesses"
+msgstr "Användare & Företag"
+
+#: application/dashboard.py:94
+msgid "Ads & Deals"
+msgstr "Anonnser & Affärer"
+
+#: application/dashboard.py:103
+msgid "Site content"
+msgstr "Webbplatsinnehåll"
+
+#: application/dashboard.py:111
+msgid "Files & Images"
+msgstr "Filer & Bilder"
+
+#: application/dashboard.py:119
+#: application/apps/accounts/templates/accounts/sidebar.html:5
+msgid "Settings"
+msgstr "Inställningar"
+
+#: application/dashboard.py:127
+msgid "Admin logs"
+msgstr "Admin logs"
+
+#: application/dashboard.py:135
+msgid "All Recent Actions"
+msgstr "All Senaste Händelser"
+
+#: application/dashboard.py:143
+msgid "Your Recent Actions"
+msgstr "Dina Senaste Händelser"
+
+#: application/settings.py:58
+msgid "English"
+msgstr "Engelska"
+
+#: application/settings.py:59
+msgid "Swedish"
+msgstr "Svenska"
+
+#: application/settings.py:82
+msgid "Buy & Sell"
+msgstr "Köp & Sälj"
+
+#: application/settings.py:83
+msgid "Sell"
+msgstr "Sälj"
+
+#: application/settings.py:84
+msgid "Buy"
+msgstr "Köp"
+
+#: application/apps/accounts/admin.py:17
+msgid "Avatar"
+msgstr "Avatar"
+
+#: application/apps/accounts/admin.py:25
+#: application/apps/accounts/models.py:51
+msgid "Business profile"
+msgstr "Företagsprofil"
+
+#: application/apps/accounts/admin.py:60
+msgid "Contact person"
+msgstr "Contact"
+
+#: application/apps/accounts/forms.py:27
+#: application/apps/accounts/templates/accounts/account_detail.html:9
+#: application/apps/interest/forms.py:14
+#: application/apps/interest/models.py:11
+msgid "First name"
+msgstr "Förnamn"
+
+#: application/apps/accounts/forms.py:28
+#: application/apps/accounts/templates/accounts/account_detail.html:13
+#: application/apps/interest/forms.py:15
+#: application/apps/interest/models.py:12
+msgid "Last name"
+msgstr "Efternamn"
+
+#: application/apps/accounts/forms.py:30
+#: application/apps/accounts/forms.py:222
+#: application/apps/accounts/templates/accounts/account_detail.html:21
+#: application/apps/deals/templates/deals/deal_list.html:15
+#: application/apps/interest/forms.py:16
+#: application/apps/interest/models.py:13 application/templates/base.html:264
+msgid "Email"
+msgstr "E-post"
+
+#: application/apps/accounts/forms.py:31
+msgid "Confirm email"
+msgstr "Bekräfta e-post"
+
+#: application/apps/accounts/forms.py:33
+#: application/apps/accounts/models.py:24
+#: application/apps/accounts/templates/accounts/account_detail.html:29
+#: application/apps/deals/templates/deals/deal_list.html:13
+msgid "Business name"
+msgstr "Företagsnamn"
+
+#: application/apps/accounts/forms.py:34
+#: application/apps/accounts/models.py:32
+#: application/apps/accounts/templates/accounts/account_detail.html:33
+msgid "Country"
+msgstr "Land"
+
+#: application/apps/accounts/forms.py:35
+#: application/apps/accounts/models.py:33
+#: application/apps/accounts/templates/accounts/account_detail.html:37
+#: application/apps/deals/templates/deals/deal_list.html:14
+msgid "Address"
+msgstr "Adress"
+
+#: application/apps/accounts/forms.py:36
+#: application/apps/accounts/templates/accounts/account_detail.html:41
+msgid "Zipcode"
+msgstr "Postkod"
+
+#: application/apps/accounts/forms.py:37
+#: application/apps/accounts/models.py:35
+#: application/apps/accounts/templates/accounts/account_detail.html:45
+msgid "City"
+msgstr "Stad"
+
+#: application/apps/accounts/forms.py:39
+msgid "Sign me up for Bidpart newsletter"
+msgstr "Registrera mig för Bidpart nyhetsbrev"
+
+#: application/apps/accounts/forms.py:53
+msgid "The entered email already exists"
+msgstr "Den angivna e-post adressen finns redan"
+
+#: application/apps/accounts/forms.py:63
+msgid "Both email fields must match."
+msgstr "Båda e-post fälten måste match"
+
+#: application/apps/accounts/forms.py:130
+msgid "Password (min 6)"
+msgstr "Lösenord (min 6)"
+
+#: application/apps/accounts/forms.py:131
+msgid "Yes, I approve of the"
+msgstr "Ja, jag godkänner den"
+
+#: application/apps/accounts/forms.py:170
+#: application/apps/accounts/forms.py:172
+msgid "Invalid email or password"
+msgstr "Ogiltig e-postadress eller lösenord"
+
+#: application/apps/accounts/forms.py:186
+#: application/apps/accounts/templates/accounts/agent_index.html:52
+#: application/apps/ads/templates/ads/ad_header_search.html:10
+msgid "Search"
+msgstr "Sök"
+
+#: application/apps/accounts/forms.py:190
+msgid "All states"
+msgstr "Alla tillstånd"
+
+#: application/apps/accounts/forms.py:216
+msgid "Recruit somone?"
+msgstr "Rekrytera någon?"
+
+#: application/apps/accounts/forms.py:246
+msgid "You need to select one or more choices."
+msgstr "Du måste välja en eller fler val."
+
+#: application/apps/accounts/models.py:22
+#: application/apps/accounts/templates/accounts/sidebar.html:20
+#: application/apps/accounts/templates/accounts/sidebar.html:35
+#: application/apps/ads/models.py:87 application/apps/blog/models.py:45
+#: application/apps/deals/models.py:30
+msgid "Active"
+msgstr "Aktiv"
+
+#: application/apps/accounts/models.py:23 application/apps/ads/models.py:88
+#: application/apps/files/models.py:33
+msgid "Creator"
+msgstr "Skapare"
+
+#: application/apps/accounts/models.py:26
+msgid "Business description"
+msgstr "Företagsbeskrivning"
+
+#: application/apps/accounts/models.py:27
+msgid "Business agent"
+msgstr "Företagsagent"
+
+#: application/apps/accounts/models.py:28
+msgid "Is Agent"
+msgstr "Är Agent"
+
+#: application/apps/accounts/models.py:34
+msgid "Zip code"
+msgstr "Postkod"
+
+#: application/apps/accounts/models.py:40
+msgid "Commission Override"
+msgstr "Provisionöverridning"
+
+#: application/apps/accounts/models.py:50
+#: application/apps/accounts/models.py:117
+msgid "Accounts"
+msgstr "Konton"
+
+#: application/apps/accounts/models.py:52
+msgid "Business profiles"
+msgstr "Företagsprofiler"
+
+#: application/apps/accounts/models.py:62
+msgid "Provision level"
+msgstr "Provisionsnivå"
+
+#: application/apps/accounts/models.py:64
+#: application/apps/accounts/models.py:72
+msgid "Number of sold ads"
+msgstr "Antal sålda annonser"
+
+#: application/apps/accounts/models.py:65
+msgid "Number of bought ads"
+msgstr "Antal köpta annonser"
+
+#: application/apps/accounts/models.py:66
+msgid "Number of ads"
+msgstr "Antal annonser"
+
+#: application/apps/accounts/models.py:67
+msgid "Total views of all ads"
+msgstr "Totalt antal visningar av alla annonser"
+
+#: application/apps/accounts/models.py:71
+msgid "Number of recruited businesses"
+msgstr "Antal rekryterade företag"
+
+#: application/apps/accounts/models.py:73
+msgid "Deals (interested)"
+msgstr "Affärer (intresse)"
+
+#: application/apps/accounts/models.py:74
+msgid "Deals (active)"
+msgstr "Affärer (aktiv)"
+
+#: application/apps/accounts/models.py:75
+msgid "Deals (done)"
+msgstr "Affärer (klar)"
+
+#: application/apps/accounts/models.py:76
+msgid "Deals (canceled)"
+msgstr "Affärer (avbruten)"
+
+#: application/apps/accounts/models.py:82
+#: application/apps/logentryadmin/admin.py:65
+msgid "User"
+msgstr "Användare"
+
+#: application/apps/accounts/models.py:83
+msgid "Active profile"
+msgstr "Aktiv profil"
+
+#: application/apps/accounts/models.py:86
+#: application/apps/accounts/templates/accounts/account_detail.html:17
+#: application/apps/deals/templates/deals/deal_list.html:16
+#: application/apps/interest/forms.py:17
+#: application/apps/interest/models.py:14
+msgid "Phone"
+msgstr "Telefon"
+
+#: application/apps/accounts/models.py:87
+msgid "Cellphone"
+msgstr "Mobiltelefon"
+
+#: application/apps/accounts/models.py:91
+msgid "Language code"
+msgstr "Språk kod"
+
+#: application/apps/accounts/models.py:118
+msgid "User profile"
+msgstr "Användarprofil"
+
+#: application/apps/accounts/models.py:119
+msgid "User profiles"
+msgstr "Användarprofiler"
+
+#: application/apps/accounts/views.py:69
+msgid "Your details was saved successfully."
+msgstr "Dina uppgifter har sparats."
+
+#: application/apps/accounts/templates/accounts/account_detail.html:5
+#: application/apps/accounts/templates/accounts/account_form.html:25
+#: application/apps/accounts/templates/accounts/signup_form.html:14
+msgid "Account"
+msgstr "Konto"
+
+#: application/apps/accounts/templates/accounts/account_detail.html:26
+#: application/apps/accounts/templates/accounts/account_form.html:61
+#: application/apps/accounts/templates/accounts/signup_form.html:59
+msgid "Company"
+msgstr "Företag"
+
+#: application/apps/accounts/templates/accounts/account_form.html:111
+msgid "Update details"
+msgstr "Uppdatera detaljer"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:5
+msgid "Recruited"
+msgstr "Rekryterad"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:9
+msgid "Completed deals"
+msgstr "Avslutade affärer"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:16
+msgid "Signs of interest"
+msgstr "Intresseanmälningar"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:20
+msgid "Active deals"
+msgstr "Aktiva affärer"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:24
+msgid "Canceled deals"
+msgstr "Avbrutna affärer"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:32
+#: application/apps/accounts/templates/accounts/dashboard.html:21
+msgid "Commission level"
+msgstr "Provisionsnivå"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:32
+#: application/apps/accounts/templates/accounts/dashboard.html:21
+msgid "Explaination?"
+msgstr "Förklaring?"
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:40
+msgid "to"
+msgstr "till"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:35
+msgid "Send invite"
+msgstr "Skicka inbjudning"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:45
+#: application/apps/accounts/templates/accounts/index.html:49
+msgid "Dashboard"
+msgstr "Instrumentpanel"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:60
+#: application/apps/ads/models.py:128 application/apps/ads/models.py:281
+#: application/apps/ads/models.py:290 application/apps/deals/admin.py:35
+#: application/apps/deals/models.py:37
+msgid "Ad"
+msgstr "Annons"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:61
+msgid "Status"
+msgstr "Status"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:62
+#: application/apps/deals/models.py:39
+#: application/apps/deals/templates/deals/deal_list.html:10
+#: application/apps/deals/templates/deals/deal_list.html:45
+msgid "Bid"
+msgstr "Bud"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:63
+msgid "End-price (EUR)"
+msgstr "Slutpris (EUR)"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:64
+msgid "Your profit (EUR)"
+msgstr "Din vinst (EUR)"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:65
+#: application/apps/invoice/models.py:150
+#: application/apps/invoice/models.py:151
+#: application/apps/invoice/models.py:165
+#: application/apps/invoice/models.py:198
+msgid "Invoice"
+msgstr "Faktura"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:86
+msgid "Already billed"
+msgstr "Har redan fakturerats"
+
+#: application/apps/accounts/templates/accounts/agent_index.html:89
+msgid "Download invoice base"
+msgstr "Ladda ner fakturaunderlag"
+
+#: application/apps/accounts/templates/accounts/dashboard.html:5
+msgid "Views"
+msgstr "Visningar"
+
+#: application/apps/accounts/templates/accounts/dashboard.html:9
+msgid "Active ads"
+msgstr "Aktiva annonser"
+
+#: application/apps/accounts/templates/accounts/dashboard.html:13
+msgid "Sold products"
+msgstr "Sålda produkter"
+
+#: application/apps/accounts/templates/accounts/login_form.html:9
+#: application/apps/accounts/templates/accounts/login_form.html:41
+#: application/templates/base.html:317
+#: application/templates/admin/login.html:65
+msgid "Login"
+msgstr "Logga in"
+
+#: application/apps/accounts/templates/accounts/login_form.html:29
+msgid "Forgot your password?"
+msgstr "Glömt ditt lösenord?"
+
+#: application/apps/accounts/templates/accounts/login_form.html:48
+msgid "Signup"
+msgstr "Skapa konto"
+
+#: application/apps/accounts/templates/accounts/login_form.html:50
+msgid "Don't have an account?"
+msgstr "Har du inget konto?"
+
+#: application/apps/accounts/templates/accounts/login_form.html:51
+#: application/apps/interest/templates/interest/interest_form.html:68
+msgid "Create an account"
+msgstr "Skapa ett konto"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:10
+#: application/templates/registration/password_change_form.html:45
+#: application/templates/registration/password_reset_confirm.html:37
+msgid "Change password"
+msgstr "Byt lösenord"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:12
+#: application/templates/base.html:212
+msgid "Logout"
+msgstr "Logga ut"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:18
+msgid "Your ads"
+msgstr "Dina annonser"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:23
+msgid "Unpublished"
+msgstr "Opublicerad"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:26
+#: application/apps/accounts/templates/accounts/sidebar.html:41
+#: application/apps/deals/models.py:31
+msgid "Completed"
+msgstr "Avslutad"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:33
+msgid "Your bids"
+msgstr "Dina bud"
+
+#: application/apps/accounts/templates/accounts/sidebar.html:38
+#: application/apps/deals/models.py:32
+msgid "Canceled"
+msgstr "Avbruten"
+
+#: application/apps/accounts/templates/accounts/sidebar_commission_levels.html:6
+msgid "Sales in 1000s EUR"
+msgstr "Försäljning i 1000s EUR"
+
+#: application/apps/accounts/templates/accounts/signup_form.html:16
+msgid "Have an account?"
+msgstr "Har du ett konto?"
+
+#: application/apps/accounts/templates/accounts/signup_form.html:17
+msgid "Login here"
+msgstr "Logga in här"
+
+#: application/apps/accounts/templates/accounts/signup_form.html:117
+msgid "Terms & Agreement"
+msgstr "Användarvillkor"
+
+#: application/apps/accounts/templates/accounts/signup_form.html:123
+msgid "Next step"
+msgstr "Nästa steg"
+
+#: application/apps/accounts/templates/accounts/signup_form.html:125
+msgid "Create"
+msgstr "Skapa"
+
+#: application/apps/adminsettings/admin.py:19
+msgid "Activated setting!"
+msgstr "Aktiverade inställning!"
+
+#: application/apps/adminsettings/admin.py:20
+msgid "Activate setting"
+msgstr "Aktiviera inställning"
+
+#: application/apps/adminsettings/admin.py:26
+msgid "Deactivated setting!"
+msgstr "Avaktiverade inställning!"
+
+#: application/apps/adminsettings/admin.py:27
+msgid "Deactivate setting"
+msgstr "Avaktivera inställning"
+
+#: application/apps/adminsettings/admin.py:31 application/apps/ads/admin.py:75
+#: application/apps/ads/admin.py:103 application/apps/ads/models.py:80
+#: application/apps/ads/models.py:200
+#: application/apps/ads/templates/ads/ad_form.html:29
+msgid "Product type"
+msgstr "Produkttyp"
+
+#: application/apps/adminsettings/admin.py:32 application/apps/ads/admin.py:76
+#: application/apps/ads/models.py:201
+msgid "Product types"
+msgstr "Produkttyper"
+
+#: application/apps/adminsettings/models.py:16
+msgid "String"
+msgstr "Sträng"
+
+#: application/apps/adminsettings/models.py:17
+msgid "Integer"
+msgstr "Heltal"
+
+#: application/apps/adminsettings/models.py:18
+msgid "Decimal"
+msgstr "Decimal"
+
+#: application/apps/adminsettings/models.py:19
+msgid "Boolean"
+msgstr "Boolean"
+
+#: application/apps/adminsettings/models.py:76
+#: application/apps/adminsettings/models.py:78
+#: application/apps/adminsettings/models.py:88
+msgid "Admin settings"
+msgstr "Admin inställningar"
+
+#: application/apps/adminsettings/models.py:77
+msgid "Admin setting"
+msgstr "Admin inställning"
+
+#: application/apps/adminsettings/models.py:89
+msgid "Admin settings group"
+msgstr "Admin instlällningsgrupp"
+
+#: application/apps/adminsettings/models.py:90
+msgid "Admin settings groups"
+msgstr "Admin instlällningsgrupper"
+
+#: application/apps/ads/admin.py:100
+#: application/apps/ads/templates/ads/ad_form.html:53
+msgid "Product information"
+msgstr "Produktinformation"
+
+#: application/apps/ads/admin.py:106
+msgid "Other"
+msgstr "Övrigt"
+
+#: application/apps/ads/admin.py:109
+msgid "Information"
+msgstr "Information"
+
+#: application/apps/ads/forms.py:29 application/apps/ads/forms.py:99
+#: application/apps/ads/forms.py:146
+msgid "Choose here"
+msgstr "Välj här"
+
+#: application/apps/ads/forms.py:29 application/apps/ads/models.py:219
+msgid "Product category"
+msgstr "Produktkategori"
+
+#: application/apps/ads/forms.py:33
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#: application/apps/ads/forms.py:33 application/apps/ads/models.py:91
+msgid "An url to a youtube-clip"
+msgstr "En url till ett youtubeklipp"
+
+#: application/apps/ads/forms.py:37 application/apps/ads/models.py:81
+#: application/apps/ads/models.py:184
+#: application/apps/ads/templates/ads/ad_detail.html:52
+msgid "Business domains"
+msgstr "Affärsområden"
+
+#: application/apps/ads/forms.py:167
+#, python-format
+msgid "%s can't be comined with other business domains"
+msgstr "%s kan ej kombineras med andra affärsområden"
+
+#: application/apps/ads/forms.py:180 application/apps/ads/forms.py:182
+msgid "We can not find this youtube video."
+msgstr "Vi kan inte hitta detta youtubeklipp"
+
+#: application/apps/ads/forms.py:193
+msgid "Please fill out product information for at least one language"
+msgstr "Vänligen fyll i produktinformation för minst ett språk"
+
+#: application/apps/ads/forms.py:297
+msgid "Invalid extension. Valid extensions are: {0}."
+msgstr "Ogiltig filändelse. Giltiga filändelser är: {0}."
+
+#: application/apps/ads/forms.py:299
+msgid "Image to large (> 8mb)"
+msgstr "Filen är för stor (> 8mb)"
+
+#: application/apps/ads/forms.py:301
+msgid "Could not read uploaded image"
+msgstr "Kan ej läsa den uppladdade filen"
+
+#: application/apps/ads/forms.py:324
+msgid "Created ascending"
+msgstr "Skapad stigande"
+
+#: application/apps/ads/forms.py:325
+msgid "Created descending"
+msgstr "Skapad fallande"
+
+#: application/apps/ads/forms.py:327
+msgid "Title ascending"
+msgstr "Titel stigande"
+
+#: application/apps/ads/forms.py:328
+msgid "Title descending"
+msgstr "Titel fallande"
+
+#: application/apps/ads/forms.py:330
+msgid "Price ascending"
+msgstr "Pris stigande"
+
+#: application/apps/ads/forms.py:331
+msgid "Price descending"
+msgstr "Pris fallande"
+
+#: application/apps/ads/forms.py:333
+msgid "Converted price ascending"
+msgstr "Konverterat pris stigande"
+
+#: application/apps/ads/forms.py:334
+msgid "Converted price descending"
+msgstr "Konverterat pris fallande"
+
+#: application/apps/ads/forms.py:337
+msgid "Ads on Bidpart"
+msgstr "Annonser på Bidpart"
+
+#: application/apps/ads/forms.py:427
+#: application/apps/ads/templatetags/ads_extras.py:25
+msgid "All business domains"
+msgstr "Alla affärsområden"
+
+#: application/apps/ads/models.py:65 application/apps/blog/models.py:35
+#: application/apps/cms/admin.py:47 application/apps/files/models.py:25
+msgid "Title"
+msgstr "Titel"
+
+#: application/apps/ads/models.py:65
+msgid "The title of your ad"
+msgstr "Titel för din annons"
+
+#: application/apps/ads/models.py:67 application/apps/files/models.py:29
+msgid "Description"
+msgstr "Beskrivning"
+
+#: application/apps/ads/models.py:68
+msgid ""
+"A detailed description of your ad. Use English language to reach a wider "
+"audience."
+msgstr ""
+"En detaljerad beskrivning av din annons. Använd engelskt språk för att nå så "
+"många som möjligt."
+
+#: application/apps/ads/models.py:75
+#: application/apps/ads/templates/ads/ad_form.html:105
+msgid "Price / pcs"
+msgstr "Pris / st"
+
+#: application/apps/ads/models.py:75
+msgid "Help text for the price"
+msgstr "Help text for the price"
+
+#: application/apps/ads/models.py:76
+msgid "Help text for the currency"
+msgstr "Help text for the currency"
+
+#: application/apps/ads/models.py:77 application/apps/deals/models.py:41
+msgid "Amount"
+msgstr "Antal"
+
+#: application/apps/ads/models.py:77
+msgid "The amount of items you are selling."
+msgstr "Antalet artiklar till salu"
+
+#: application/apps/ads/models.py:78
+msgid "Help text for published"
+msgstr "Help text for the published"
+
+#: application/apps/ads/models.py:80
+msgid "Help text for product type"
+msgstr "Help text for product type"
+
+#: application/apps/ads/models.py:81
+msgid "Help text for business domains"
+msgstr "Help text for business domains"
+
+#: application/apps/ads/models.py:83 application/apps/blog/models.py:41
+#: application/apps/cms/models.py:30 application/apps/cms/models.py:51
+#: application/apps/deals/models.py:51 application/apps/edr/models.py:8
+#: application/apps/interest/models.py:16
+msgid "Updated"
+msgstr "Uppdaterad"
+
+#: application/apps/ads/models.py:83
+msgid "When the ad was last edited"
+msgstr "När var annonsen senast uppdaterad"
+
+#: application/apps/ads/models.py:84 application/apps/blog/models.py:40
+#: application/apps/cms/models.py:29 application/apps/cms/models.py:50
+#: application/apps/deals/models.py:52 application/apps/edr/models.py:9
+#: application/apps/interest/models.py:17
+msgid "Created"
+msgstr "Skapad"
+
+#: application/apps/ads/models.py:84
+msgid "When the ad was created"
+msgstr "När var annonsen skapad"
+
+#: application/apps/ads/models.py:85
+msgid "Last Deal updated"
+msgstr "Senast uppdaterad deal"
+
+#: application/apps/ads/models.py:85
+msgid "When was the last deal updated"
+msgstr "När var senaste annonsen uppdaterad"
+
+#: application/apps/ads/models.py:87
+msgid "Use this instead of deleting the ad"
+msgstr "Använd detta istället för att ta bort annonsen"
+
+#: application/apps/ads/models.py:88
+msgid "The person who created the ad"
+msgstr "Personen som skapade annonsen"
+
+#: application/apps/ads/models.py:89
+msgid "Owner"
+msgstr "Ägare"
+
+#: application/apps/ads/models.py:89
+msgid "The business who owns the ad"
+msgstr "Företaget som äger annonsen"
+
+#: application/apps/ads/models.py:91
+msgid "Youtube url"
+msgstr "Youtube url"
+
+#: application/apps/ads/models.py:93
+#: application/apps/ads/templates/ads/ad_form.html:20
+msgid "Buying"
+msgstr "Köpes"
+
+#: application/apps/ads/models.py:93
+msgid "If the ad is wanted"
+msgstr "Om annonsen är en köpesannons"
+
+#: application/apps/ads/models.py:95
+msgid "Featured"
+msgstr "Featured"
+
+#: application/apps/ads/models.py:95
+msgid "Featured on the frontpage"
+msgstr "Featured på framsidan"
+
+#: application/apps/ads/models.py:96
+msgid "Number of views"
+msgstr "Antal visningar"
+
+#: application/apps/ads/models.py:96
+msgid "Total number of views this ad has"
+msgstr "Totala antalet visningar denna annons har"
+
+#: application/apps/ads/models.py:98
+#: application/apps/ads/templates/ads/ad_form.html:216
+msgid "Your own notes"
+msgstr "Dina egna noteringar"
+
+#: application/apps/ads/models.py:98
+msgid "Your own notes is not visible to anyone else."
+msgstr "Dina egna noteringar är inte synliga för andra."
+
+#: application/apps/ads/models.py:127 application/apps/ads/models.py:129
+#: application/apps/ads/models.py:167 application/apps/ads/models.py:182
+#: application/apps/ads/models.py:199 application/apps/ads/models.py:218
+#: application/apps/ads/models.py:262 application/apps/ads/models.py:275
+#: application/apps/ads/models.py:284 application/apps/ads/models.py:296
+msgid "Ads"
+msgstr "Annonser"
+
+#: application/apps/ads/models.py:139 application/apps/ads/models.py:140
+msgid "Used for requests."
+msgstr "Used for requests."
+
+#: application/apps/ads/models.py:155
+msgid "Yes"
+msgstr "Ja"
+
+#: application/apps/ads/models.py:157
+msgid "No"
+msgstr "Nej"
+
+#: application/apps/ads/models.py:168
+msgid "Ad product field value"
+msgstr "Annons produkt fält värde"
+
+#: application/apps/ads/models.py:169
+msgid "Ad product field values"
+msgstr "Annons produkt fält värden"
+
+#: application/apps/ads/models.py:177
+msgid "Is Unique"
+msgstr "Är unik"
+
+#: application/apps/ads/models.py:177
+msgid ""
+"If this business domain is selected no other business domain can be selected."
+msgstr "Om detta affärsområde är vald så kan inga andra affärsområden väljas."
+
+#: application/apps/ads/models.py:183
+msgid "Business domain"
+msgstr "Affärsområde"
+
+#: application/apps/ads/models.py:220
+msgid "Product categories"
+msgstr "Produktkategorier"
+
+#: application/apps/ads/models.py:263
+msgid "Product field"
+msgstr "Produktfält"
+
+#: application/apps/ads/models.py:264
+msgid "Product fields"
+msgstr "Produktfält"
+
+#: application/apps/ads/models.py:276
+msgid "Product field choice"
+msgstr "Produktfälts val"
+
+#: application/apps/ads/models.py:277
+msgid "Product field choices"
+msgstr "Produktfälts val"
+
+#: application/apps/ads/models.py:285
+msgid "Ad image"
+msgstr "Annonsbild"
+
+#: application/apps/ads/models.py:286
+msgid "Ad images"
+msgstr "Annonsbilder"
+
+#: application/apps/ads/models.py:297
+msgid "Ad file"
+msgstr "Annonsfil"
+
+#: application/apps/ads/models.py:298
+msgid "Ad files"
+msgstr "Annonsfiler"
+
+#: application/apps/ads/views.py:197
+msgid "Permission denied"
+msgstr "Tillstånd nekas"
+
+#: application/apps/ads/templates/ads/ad_deals.html:4
+msgid "interests"
+msgstr "Intressen"
+
+#: application/apps/ads/templates/ads/ad_deals.html:5
+msgid "deals"
+msgstr "affärer"
+
+#: application/apps/ads/templates/ads/ad_deals.html:6
+msgid "completed"
+msgstr "avslutad"
+
+#: application/apps/ads/templates/ads/ad_deals.html:9
+#: application/apps/deals/models.py:38
+#: application/apps/deals/templates/deals/deal_list.html:42
+msgid "State"
+msgstr "Tillstånd"
+
+#: application/apps/ads/templates/ads/ad_deals.html:10
+msgid "Your bid"
+msgstr "Dina bud"
+
+#: application/apps/ads/templates/ads/ad_detail.html:41
+#: application/apps/blog/templates/blog/blog_entry.html:27
+msgid "Published"
+msgstr "Publicerad"
+
+#: application/apps/ads/templates/ads/ad_detail.html:41
+msgid "Share on"
+msgstr "Dela på"
+
+#: application/apps/ads/templates/ads/ad_detail.html:63
+#: application/apps/ads/templates/ads/ad_list_table.html:20
+#: application/apps/ads/templates/ads/ad_list_table.html:24
+#: application/apps/ads/templates/ads/ad_list_table.html:42
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:24
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:23
+msgid "Quantity"
+msgstr "Antal"
+
+#: application/apps/ads/templates/ads/ad_detail.html:67
+msgid "Todays rates"
+msgstr "Dagens växlingskurs"
+
+#: application/apps/ads/templates/ads/ad_detail.html:76
+#: application/apps/deals/templates/deals/deal_list.html:80
+msgid "pcs"
+msgstr "st"
+
+#: application/apps/ads/templates/ads/ad_detail.html:87
+msgid "Deals"
+msgstr "Affärer"
+
+#: application/apps/ads/templates/ads/ad_detail.html:88
+#: application/apps/ads/templates/ads/ad_detail.html:90
+msgid "Specification"
+msgstr "Specifikation"
+
+#: application/apps/ads/templates/ads/ad_detail.html:93
+#: application/apps/files/models.py:70 application/apps/files/models.py:72
+#: application/apps/files/models.py:80 application/apps/files/models.py:200
+msgid "Files"
+msgstr "Filer"
+
+#: application/apps/ads/templates/ads/ad_detail.html:96
+msgid "More ads"
+msgstr "Mer annonser"
+
+#: application/apps/ads/templates/ads/ad_detail.html:101
+msgid "Login to sign of interest"
+msgstr "Logga in för att göra en intresseanmälan"
+
+#: application/apps/ads/templates/ads/ad_detail.html:103
+#: application/apps/ads/templates/ads/ad_detail.html:105
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:7
+#: application/apps/interest/templates/interest/interest_form.html:50
+msgid "Sign of interest"
+msgstr "Intresseanmälan"
+
+#: application/apps/ads/templates/ads/ad_detail.html:105
+msgid "You have already signed of interest on this ad."
+msgstr "Du har redan gjort en intresseanmälan på denna annons."
+
+#: application/apps/ads/templates/ads/ad_detail.html:109
+msgid "Update ad"
+msgstr "Uppdatera annons"
+
+#: application/apps/ads/templates/ads/ad_form.html:9
+msgid "There are errors, please review the form and submit again."
+msgstr "Det finns fel, vänligen granska formuläret och skicka igen."
+
+#: application/apps/ads/templates/ads/ad_form.html:14
+msgid "Ad type"
+msgstr "Anonnstyp"
+
+#: application/apps/ads/templates/ads/ad_form.html:19
+msgid "Selling"
+msgstr "Säljes"
+
+#: application/apps/ads/templates/ads/ad_form.html:30
+msgid "required"
+msgstr "krävs"
+
+#: application/apps/ads/templates/ads/ad_form.html:106
+msgid "Max price / pcs"
+msgstr "Maxpris / st"
+
+#: application/apps/ads/templates/ads/ad_form.html:113
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:41
+msgid ""
+"Bidparts commission is 10&#37; (minimum € 60) and based on the final price "
+"of each individual deal."
+msgstr ""
+"Bidparts provision är 10&#37; (minimum 60 €) och baseras på det slutgiltliga "
+"priset på varje enskild affär. "
+
+#: application/apps/ads/templates/ads/ad_form.html:119
+msgid "Advertise without price"
+msgstr "Annonsera utan pris"
+
+#: application/apps/ads/templates/ads/ad_form.html:128
+msgid "Pcs"
+msgstr "St"
+
+#: application/apps/ads/templates/ads/ad_form.html:148
+#: application/apps/files/models.py:202
+msgid "Images"
+msgstr "Bilder"
+
+#: application/apps/ads/templates/ads/ad_form.html:163
+msgid "Upload image"
+msgstr "Ladda upp bild"
+
+#: application/apps/ads/templates/ads/ad_form.html:175
+msgid "Files & documentation"
+msgstr "Filer & dokumentation"
+
+#: application/apps/ads/templates/ads/ad_form.html:190
+msgid "Upload file"
+msgstr "Ladda upp fil"
+
+#: application/apps/ads/templates/ads/ad_form.html:202
+msgid "Youtube"
+msgstr "Youtube"
+
+#: application/apps/ads/templates/ads/ad_form.html:230
+#: application/apps/ads/templates/ads/ad_form.html:240
+#: application/apps/ads/templates/ads/ad_form.html:249
+msgid "Delete"
+msgstr "Radera"
+
+#: application/apps/ads/templates/ads/ad_form.html:231
+msgid "Save Ad"
+msgstr "Spara annons"
+
+#: application/apps/ads/templates/ads/ad_form.html:244
+msgid "Are you sure you want to delete this ad?"
+msgstr "Är du säker på att du vill ta bort anonnsen?"
+
+#: application/apps/ads/templates/ads/ad_form.html:248
+#: application/apps/deals/forms.py:63
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: application/apps/ads/templates/ads/ad_form_product_type_fields.html:2
+msgid "Product specification"
+msgstr "Produktspecifikation"
+
+#: application/apps/ads/templates/ads/ad_form_product_type_fields.html:29
+msgid "Please choose a product type"
+msgstr "Vänligen välj en produkttyp"
+
+#: application/apps/ads/templates/ads/ad_header_search.html:4
+msgid "Search for"
+msgstr "Sök efter"
+
+#: application/apps/ads/templates/ads/ad_header_search.html:8
+msgid "in"
+msgstr "i"
+
+#: application/apps/ads/templates/ads/ad_list.html:54
+msgid "Featured ads"
+msgstr "Utvalda annonser"
+
+#: application/apps/ads/templates/ads/ad_list.html:55
+msgid "Latest ads"
+msgstr "Senaste annonserna"
+
+#: application/apps/ads/templates/ads/ad_list.html:58
+msgid "See more of the latest ads"
+msgstr "Se fler av de senaste annonserna"
+
+#: application/apps/ads/templates/ads/ad_list_sidebar.html:3
+msgid "Filter ads"
+msgstr "Filtrera annonser"
+
+#: application/apps/ads/templates/ads/ad_list_sidebar.html:10
+msgid "Back"
+msgstr "Bakåt"
+
+#: application/apps/ads/templates/ads/ad_list_table.html:23
+#: application/apps/ads/templates/ads/ad_list_table.html:41
+msgid "Date added"
+msgstr "Datum tillagd"
+
+#: application/apps/ads/templates/ads/ad_list_table.html:25
+#: application/apps/ads/templates/ads/ad_list_table.html:43
+#: application/apps/deals/models.py:40
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:28
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:30
+msgid "Price"
+msgstr "Pris"
+
+#: application/apps/ads/templates/ads/ad_list_table.html:39
+msgid "Product name"
+msgstr "Produknamn"
+
+#: application/apps/ads/templates/ads/ad_list_table.html:57
+msgid "BUYING"
+msgstr "KÖPER"
+
+#: application/apps/ads/templates/ads/ad_list_table.html:70
+#: application/apps/deals/templates/deals/deal_list.html:75
+msgid "ago"
+msgstr "sedan"
+
+#: application/apps/ads/templates/ads/ad_success_delete.html:5
+msgid "Your ad has been successfully deleted."
+msgstr "Din anonns har blivit borttagen."
+
+#: application/apps/ads/templates/ads/ad_success_delete.html:7
+msgid "Continue"
+msgstr "Fortsätt"
+
+#: application/apps/ads/templates/ads/pagination.html:8
+#: application/apps/ads/templates/ads/pagination.html:11
+msgid "Prev"
+msgstr "Föreg"
+
+#: application/apps/ads/templates/ads/pagination.html:9
+#: application/apps/ads/templates/ads/pagination.html:12
+msgid "First"
+msgstr "Första"
+
+#: application/apps/ads/templates/ads/pagination.html:36
+#: application/apps/ads/templates/ads/pagination.html:39
+msgid "Last"
+msgstr "Sista"
+
+#: application/apps/ads/templates/ads/pagination.html:37
+#: application/apps/ads/templates/ads/pagination.html:40
+msgid "Next"
+msgstr "Nästa"
+
+#: application/apps/ads/templatetags/ads_extras.py:25
+msgid "All product categories"
+msgstr "Alla produktkategorier"
+
+#: application/apps/ads/templatetags/ads_extras.py:26
+msgid "All product types"
+msgstr "Alla produkttyper"
+
+#: application/apps/ads/templatetags/ads_extras.py:90
+#, python-format
+msgid "Actual price: %(amount)s %(currency)s"
+msgstr "Verkligt pris: %(amount)s %(currency)s"
+
+#: application/apps/ads/templatetags/ads_extras.py:99
+msgid "Offer desired"
+msgstr "Anbud önskas"
+
+#: application/apps/ads/templatetags/ads_extras.py:100
+msgid "No price is set, please leve an offer."
+msgstr "Inget är pris satt, vänligen lämna bud."
+
+#: application/apps/blog/admin.py:34 application/apps/blog/models.py:42
+msgid "Publish"
+msgstr "Publicera"
+
+#: application/apps/blog/models.py:36 application/apps/files/models.py:27
+msgid "Title slug"
+msgstr "Titel-slug"
+
+#: application/apps/blog/models.py:37
+msgid "Text teaser"
+msgstr "Ingress"
+
+#: application/apps/blog/models.py:38
+msgid "Text body"
+msgstr "Brödtext"
+
+#: application/apps/blog/models.py:43
+msgid "Unpublish"
+msgstr "Avpublicera"
+
+#: application/apps/blog/models.py:71 application/apps/blog/models.py:84
+#: application/apps/blog/templates/blog/blog_detail.html:4
+#: application/apps/blog/templates/blog/blog_list.html:4
+#: application/templates/base.html:306
+msgid "Blog"
+msgstr "Blogg"
+
+#: application/apps/blog/models.py:72
+msgid "Blog entry"
+msgstr "Blogginlägg"
+
+#: application/apps/blog/models.py:73
+msgid "Blog entries"
+msgstr "Blogginlägg"
+
+#: application/apps/blog/models.py:78 application/apps/cms/models.py:25
+#: application/apps/files/admin.py:38 application/apps/files/admin.py:44
+#: application/apps/files/models.py:201
+msgid "Image"
+msgstr "Bild"
+
+#: application/apps/blog/models.py:85
+msgid "Blog entry image"
+msgstr "Blogginlägg bild"
+
+#: application/apps/blog/models.py:86
+msgid "Blog entry images"
+msgstr "Blogginlägg bilder"
+
+#: application/apps/blog/templates/blog/blog_list.html:11
+msgid "No blog entries found."
+msgstr "Inga blogginlägg hittades"
+
+#: application/apps/cms/admin.py:20
+msgid "Thumbnail"
+msgstr "Tumnagel"
+
+#: application/apps/cms/admin.py:50
+msgid "Body"
+msgstr "Brödtext"
+
+#: application/apps/cms/admin.py:87 application/apps/cms/models.py:78
+msgid "Subject"
+msgstr "Ämne"
+
+#: application/apps/cms/admin.py:90
+msgid "HTML"
+msgstr "HTML"
+
+#: application/apps/cms/admin.py:93
+msgid "Plain text"
+msgstr "Klartext"
+
+#: application/apps/cms/models.py:27
+msgid "Active on site"
+msgstr "Aktiva på sidan"
+
+#: application/apps/cms/models.py:28 application/apps/cms/models.py:47
+msgid "Internal title"
+msgstr "Intern titel"
+
+#: application/apps/cms/models.py:33
+msgid "Slider page"
+msgstr "Slidersida"
+
+#: application/apps/cms/models.py:34
+msgid "Slider pages"
+msgstr "Slidersidor"
+
+#: application/apps/cms/models.py:48
+msgid "URL slug"
+msgstr "URL-slug"
+
+#: application/apps/cms/models.py:53
+msgid "Show in top menu"
+msgstr "Visa i huvudmeny"
+
+#: application/apps/cms/models.py:69
+msgid "Page"
+msgstr "Sida"
+
+#: application/apps/cms/models.py:70
+msgid "Pages"
+msgstr "Sidor"
+
+#: application/apps/cms/models.py:79
+msgid "HTML Template"
+msgstr "HTML Template"
+
+#: application/apps/cms/models.py:80
+msgid "Text Template"
+msgstr "Text Template"
+
+#: application/apps/cms/models.py:89
+msgid "Email template"
+msgstr "E-post template"
+
+#: application/apps/cms/models.py:90
+msgid "Email templates"
+msgstr "E-post templates"
+
+#: application/apps/contact/templates/contact/contact_form.html:9
+#: application/apps/contact/templates/contact/contact_thanks.html:9
+#: application/templates/base.html:304
+msgid "Contact us"
+msgstr "Kontakta oss"
+
+#: application/apps/contact/templates/contact/contact_form.html:22
+msgid "Subject:"
+msgstr "Ämne:"
+
+#: application/apps/contact/templates/contact/contact_form.html:26
+msgid "Message:"
+msgstr "Meddelande:"
+
+#: application/apps/contact/templates/contact/contact_form.html:30
+msgid "Your name:"
+msgstr "Ditt namn:"
+
+#: application/apps/contact/templates/contact/contact_form.html:34
+msgid "Your e-mail address:"
+msgstr "Din e-postadress:"
+
+#: application/apps/contact/templates/contact/contact_form.html:38
+msgid "Send me a copy of the support ticket."
+msgstr "Skicka mig en kopia av ärendet"
+
+#: application/apps/contact/templates/contact/contact_form.html:42
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:39
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:55
+#: application/apps/edr/templates/edr/optout_form.html:13
+msgid "Send"
+msgstr "Skicka"
+
+#: application/apps/contact/templates/contact/contact_form.html:54
+msgid "Tel"
+msgstr "Tel"
+
+#: application/apps/contact/templates/contact/contact_form.html:55
+msgid "Fax"
+msgstr "Fax"
+
+#: application/apps/contact/templates/contact/contact_thanks.html:14
+msgid "Thanks for contacting us. We will get back to you shortly."
+msgstr "Tack för att du kontaktar oss. Vi återkommer innom kort."
+
+#: application/apps/deals/admin.py:45
+msgid "Buyer"
+msgstr "Köpare"
+
+#: application/apps/deals/admin.py:54
+msgid "Seller"
+msgstr "Säljare"
+
+#: application/apps/deals/forms.py:61
+msgid "Activate"
+msgstr "Aktivera"
+
+#: application/apps/deals/forms.py:62
+msgid "Extend"
+msgstr "Förläng"
+
+#: application/apps/deals/forms.py:64
+msgid "Complete"
+msgstr "Avsluta"
+
+#: application/apps/deals/models.py:29
+msgid "Interested"
+msgstr "Intresserad"
+
+#: application/apps/deals/models.py:39
+msgid "Optional bid"
+msgstr "Valfritt bud"
+
+#: application/apps/deals/models.py:40
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:26
+msgid "End price"
+msgstr "Slutpris"
+
+#: application/apps/deals/models.py:41
+msgid "The number of items"
+msgstr "Antalet objekt"
+
+#: application/apps/deals/models.py:42
+msgid "End price (Converted to EUR)"
+msgstr "Slutpris (Konverterat till EUR)"
+
+#: application/apps/deals/models.py:42
+msgid "Price converted to EUR"
+msgstr "Pris konverterat till EUR"
+
+#: application/apps/deals/models.py:43
+msgid "Commission"
+msgstr "Provision"
+
+#: application/apps/deals/models.py:44
+msgid "Agent Commission"
+msgstr "Agentprovision"
+
+#: application/apps/deals/models.py:44
+msgid "Agent comission"
+msgstr "Agentprovision"
+
+#: application/apps/deals/models.py:45
+msgid "Last reminder"
+msgstr "Senaste påminnelse"
+
+#: application/apps/deals/models.py:46
+msgid "Manual processing"
+msgstr "Manuell hantering"
+
+#: application/apps/deals/models.py:47
+msgid "Payed to agent"
+msgstr "Utbetalt till agent"
+
+#: application/apps/deals/models.py:48
+#: application/apps/deals/templates/deals/deal_list.html:18
+msgid "Cancel reason"
+msgstr "Avbruten anledning"
+
+#: application/apps/deals/models.py:49
+msgid "The invoice this deal has auto-created"
+msgstr "Fakturan som denna affär har auto-skapat"
+
+#: application/apps/deals/models.py:49
+msgid "If this deal auto-created a invoice, it will be referenced here"
+msgstr "Om denna affär auto-skapade en faktura, är den refererad här"
+
+#: application/apps/deals/models.py:50
+msgid "Renewed"
+msgstr "Förnyad"
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:6
+msgid "Activate deal for ad"
+msgstr "Aktivera affär för annons"
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:10
+msgid "The deal is now activated."
+msgstr "Affären är nu aktiverad"
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:14
+msgid ""
+"By activating this deal you'll be granted access to the other partys contact "
+"information."
+msgstr ""
+"Genom att aktivera den här affären så får du ta del av motpartens "
+"kontaktuppgifter."
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:38
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:35
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:45
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:54
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:56
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:28
+msgid "Close"
+msgstr "Stäng"
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:6
+msgid "Cancel deal for ad"
+msgstr "Avbryt affär för annons"
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:10
+msgid "The deal is now canceled."
+msgstr "Affären är nu avbruten"
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:14
+msgid ""
+"To get the statistics, we wish that you give the reason for you to cancel "
+"the deal. This information is for internal use only and will not be shown to "
+"the other party."
+msgstr ""
+"För att få statistik önskar vi att ni anger orsaken till att ni avbryter "
+"affären. Denna information är endast för interntbruk och kommer inte att "
+"visas för motparten."
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:17
+msgid ""
+"In order to offer other equipment we will contact the other party when a "
+"deal is cancelled."
+msgstr ""
+"För att kunna erbjuda annan utrustning kommer vi att kontakta motparten när "
+"en affär avbryts."
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:22
+msgid "Reason for canceling"
+msgstr "Anledning för att avbryta"
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:36
+#: application/apps/deals/templates/deals/deal_list.html:31
+msgid "Cancel deal"
+msgstr "Avbryt affär"
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:6
+msgid "Complete deal for ad"
+msgstr "Avsluta affär för annons"
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:10
+msgid "The deal is now completed."
+msgstr "Affären är nu avslutad."
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:14
+msgid ""
+"Please complete the deal by entering the total price for the quantity that "
+"have been sold."
+msgstr ""
+"Slutför affären genom att ange the totala priset för de sålda objekten."
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:19
+msgid "End quantity"
+msgstr "Slutmängd"
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:46
+msgid "Complete deal"
+msgstr "Avsluta affär"
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:11
+msgid "Your sign of interest is now sent."
+msgstr "Din intresseanmälan är nu skickad."
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:15
+msgid ""
+"With your consent, your contact information will be sent to the owner of the "
+"equipment. When the owner is aware of your contact information he can "
+"contact you regarding your inquiry."
+msgstr ""
+"Med ditt samtycke, kommer din kontaktinformation att skickas till ägaren av "
+"utrustningen. När ägaren är medveten om dina kontaktuppgifter kan han "
+"kontakta dig angående din förfrågan."
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:47
+msgid "Place your own bid"
+msgstr "Ange ditt eget bud"
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:7
+msgid "Extend deal for ad"
+msgstr "Förläng affär för annons"
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:11
+msgid "The deal is now extended."
+msgstr "Affären är nu förlängd"
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:15
+msgid ""
+"We send inactivity notifications to make sure all deals get the attention "
+"needed. By extending this deal we know you're allready working on it and "
+"wont send those reminders."
+msgstr ""
+"Vi skickar notifieringar vid inaktivitet för att alla affärer skall få den "
+"uppmärksamhet som krävs. Genom att förlänga affären vet vi att ni redan "
+"arbetar med den och vi undviker då att skicka påminnelserna."
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:29
+msgid "Extend deal"
+msgstr "Förläng affär"
+
+#: application/apps/deals/templates/deals/deal_list.html:11
+#: application/apps/deals/templates/deals/deal_list.html:70
+msgid "Begin negotiations to see contact information"
+msgstr "Inled förhandlingar för att se kontaktinformation"
+
+#: application/apps/deals/templates/deals/deal_list.html:25
+msgid "Extend negotiation time"
+msgstr "Förläng förhandlingstid"
+
+#: application/apps/deals/templates/deals/deal_list.html:27
+msgid "Begin negotiations"
+msgstr "Starta förhandlingar"
+
+#: application/apps/deals/templates/deals/deal_list.html:34
+msgid "Deal complete"
+msgstr "Affär avslutad"
+
+#: application/apps/deals/templates/deals/deal_list.html:43
+msgid "Customer"
+msgstr "Kund"
+
+#: application/apps/deals/templates/deals/deal_list.html:44
+msgid "Date"
+msgstr "Datum"
+
+#: application/apps/deals/templates/deals/deal_list.html:84
+#: application/templates/base.html:182
+msgid "Show"
+msgstr "Visa"
+
+#: application/apps/edr/templates/edr/optout_form.html:7
+#: application/apps/edr/templates/edr/optout_success.html:7
+msgid "Opt out for Bidpart emails"
+msgstr ""
+
+#: application/apps/edr/templates/edr/optout_success.html:10
+msgid "You are now removed from our mailing lists."
+msgstr ""
+
+#: application/apps/faq/models.py:9
+msgid "Name"
+msgstr "Namn"
+
+#: application/apps/faq/models.py:17
+msgid "FAQ group"
+msgstr "FAQ grupp"
+
+#: application/apps/faq/models.py:18
+msgid "FAQ groups"
+msgstr "FAQ grupper"
+
+#: application/apps/faq/models.py:25
+msgid "Groups"
+msgstr "Grupper"
+
+#: application/apps/faq/models.py:26
+msgid "Question"
+msgstr "Fråga"
+
+#: application/apps/faq/models.py:27
+msgid "Answer"
+msgstr "Svar"
+
+#: application/apps/faq/models.py:28
+msgid "Only allow logged in users to view this question"
+msgstr "Bara inloggade användare får se denna fråga"
+
+#: application/apps/faq/models.py:32
+msgid "FAQ question"
+msgstr "FAQ fråga"
+
+#: application/apps/faq/models.py:33
+msgid "FAQ questions"
+msgstr "FAQ frågor"
+
+#: application/apps/faq/templates/faq/index.html:7
+#: application/templates/base.html:305
+msgid "FAQ"
+msgstr "Frågor & Svar"
+
+#: application/apps/faq/templates/faq/index.html:12
+msgid "Questions"
+msgstr "Frågor"
+
+#: application/apps/faq/templates/faq/index.html:39
+msgid "Answers"
+msgstr "Svar"
+
+#: application/apps/files/admin.py:15 application/apps/files/admin.py:32
+msgid "Filesize"
+msgstr "Filstorlek"
+
+#: application/apps/files/models.py:28
+msgid "Short description"
+msgstr "Kort beskrivning"
+
+#: application/apps/files/models.py:31
+msgid "Unique identifier"
+msgstr "Unik identifierare"
+
+#: application/apps/files/models.py:32
+msgid "File size"
+msgstr "Filstorlek"
+
+#: application/apps/files/models.py:54 application/apps/files/models.py:71
+msgid "File"
+msgstr "Fil"
+
+#: application/apps/files/models.py:77
+msgid "File key"
+msgstr "Filnyckel"
+
+#: application/apps/files/models.py:81
+msgid "Site file"
+msgstr "Webbplatsfiler"
+
+#: application/apps/files/models.py:82
+msgid "Site files"
+msgstr "Webbplatsfiler"
+
+#: application/apps/files/models.py:91
+msgid "Image file"
+msgstr "Bildfil"
+
+#: application/apps/files/models.py:93
+msgid "Width"
+msgstr "Bredd"
+
+#: application/apps/files/models.py:93
+msgid "The width in pixels."
+msgstr "Bredden i pixlar."
+
+#: application/apps/files/models.py:94
+msgid "Height"
+msgstr "Höjd"
+
+#: application/apps/files/models.py:94
+msgid "The height in pixels."
+msgstr "Höjden i pixlar."
+
+#: application/apps/interest/models.py:19
+msgid "Comment"
+msgstr "Kommentar"
+
+#: application/apps/interest/templates/interest/interest_form.html:10
+msgid "To the frontpage"
+msgstr "Till startsidan"
+
+#: application/apps/interest/templates/interest/interest_form.html:58
+msgid "Contact me"
+msgstr "Kontakta mig"
+
+#: application/apps/interest/templates/interest/interest_form.html:64
+#: application/templates/base.html:252
+msgid "Place new ad"
+msgstr "Skapa annons"
+
+#: application/apps/interest/templates/interest/interest_form.html:67
+msgid "As easy as one, two, three:"
+msgstr "Så här enkelt är det:"
+
+#: application/apps/interest/templates/interest/interest_form.html:69
+msgid "Publish your ad"
+msgstr "Publicera din annons"
+
+#: application/apps/interest/templates/interest/interest_form.html:70
+msgid "Profit!"
+msgstr "Gör en lönsam affär!"
+
+#: application/apps/interest/templates/interest/interest_form.html:72
+msgid "Create account"
+msgstr "Skapa ett konto"
+
+#: application/apps/interest/templates/interest/interest_success.html:5
+msgid "We will contact you shortly."
+msgstr "Vi kontaktar dig snart."
+
+#: application/apps/invoice/admin.py:28
+msgid "PDF-file"
+msgstr "PDF-fil"
+
+#: application/apps/invoice/admin.py:30
+msgid "Invoice is not generated to disk."
+msgstr "Fakturan är ej sparad på disk."
+
+#: application/apps/invoice/models.py:55
+msgid "Invoice title"
+msgstr "Fakturatitel"
+
+#: application/apps/invoice/models.py:55
+msgid "Commission Invoice"
+msgstr "Provisionsfaktura"
+
+#: application/apps/invoice/models.py:62
+msgid "Terms days net"
+msgstr "Netto"
+
+#: application/apps/invoice/models.py:63
+msgid "Is basis for invoice"
+msgstr "Är fakturaundelag"
+
+#: application/apps/invoice/models.py:64
+msgid "Is the pdf written to disk"
+msgstr "Är pdf:en skriven till disk"
+
+#: application/apps/invoice/models.py:95
+msgid "Invoice basis"
+msgstr "Fakturaunderlag"
+
+#: application/apps/invoice/models.py:152
+msgid "Invoices"
+msgstr "Faktruror"
+
+#: application/apps/invoice/models.py:166
+msgid "Invoice row"
+msgstr "Fakturarad"
+
+#: application/apps/invoice/models.py:167
+msgid "Invoice rows"
+msgstr "Fakturarader"
+
+#: application/apps/invoice/models.py:199
+msgid "Invoice log entry"
+msgstr "Faktura logginlägg"
+
+#: application/apps/invoice/models.py:200
+msgid "Invoices log entries"
+msgstr "Fakturor logginlägg"
+
+#: application/apps/invoice/templates/invoice/invoice.html:17
+msgid "Invoice number"
+msgstr "Fakturanummer"
+
+#: application/apps/invoice/templates/invoice/invoice.html:21
+msgid "Invoice date"
+msgstr "Faktureringsdatum"
+
+#: application/apps/invoice/templates/invoice/invoice.html:25
+msgid "Not yet sent."
+msgstr "Ej skickad ännu."
+
+#: application/apps/invoice/templates/invoice/invoice.html:33
+msgid "Invoice address"
+msgstr "Fakturadresss"
+
+#: application/apps/invoice/templates/invoice/invoice.html:45
+msgid "Your reference"
+msgstr "Er referens"
+
+#: application/apps/invoice/templates/invoice/invoice.html:53
+msgid "Our reference"
+msgstr "Våran referens"
+
+#: application/apps/invoice/templates/invoice/invoice.html:58
+msgid "Payment terms"
+msgstr "Betalningsvillkor"
+
+#: application/apps/invoice/templates/invoice/invoice.html:59
+msgid "10 days net"
+msgstr "10 dagars netto"
+
+#: application/apps/invoice/templates/invoice/invoice.html:62
+msgid "Expiration date"
+msgstr "Förfallodatum"
+
+#: application/apps/invoice/templates/invoice/invoice.html:67
+msgid "Not sent yet"
+msgstr "Ej skickad ännu"
+
+#: application/apps/invoice/templates/invoice/invoice.html:72
+msgid "Penalty interest rate"
+msgstr "Dröjsmålsränta"
+
+#: application/apps/invoice/templates/invoice/invoice.html:107
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: application/apps/invoice/templates/invoice/invoice.html:108
+msgid "Tax rate"
+msgstr "Moms"
+
+#: application/apps/invoice/templates/invoice/invoice.html:110
+msgid "Total"
+msgstr "Totalt"
+
+#: application/apps/logentryadmin/admin.py:46
+msgid "Added"
+msgstr "Tillagd"
+
+#: application/apps/logentryadmin/admin.py:48
+msgid "Changed"
+msgstr "Ändrad"
+
+#: application/apps/logentryadmin/admin.py:50
+msgid "Deleted"
+msgstr "Borttagen"
+
+#: application/apps/logentryadmin/admin.py:52
+msgid "Action"
+msgstr "Händelse"
+
+#: application/templates/404.html:16
+msgid "Oops, this link doesn't go anyware."
+msgstr "Oops, denna länk går ingenstans."
+
+#: application/templates/500.html:31
+msgid "Oops, something went very wrong."
+msgstr "Oops, någonting gick fel."
+
+#: application/templates/500.html:33
+msgid "Our developers has just got an email about the error."
+msgstr "Våra utveklare fick just en mail om detta fel."
+
+#: application/templates/base.html:149 application/templates/base.html:312
+msgid "Language"
+msgstr "Språk"
+
+#: application/templates/base.html:166 application/templates/base.html:313
+msgid "Currency"
+msgstr "Valuta"
+
+#: application/templates/base.html:204 application/templates/base.html:315
+msgid "My Account"
+msgstr "Mitt konto"
+
+#: application/templates/base.html:209
+msgid "Agent Dashboard"
+msgstr "Agent Instrumentpanel"
+
+#: application/templates/base.html:211
+msgid "My Details"
+msgstr "Mina detaljer"
+
+#: application/templates/base.html:219
+msgid "Login / Signup"
+msgstr "Logga in / Skapa konto"
+
+#: application/templates/base.html:262
+msgid "Free support"
+msgstr "Gratis support"
+
+#: application/templates/base.html:263
+msgid "Call"
+msgstr "Ring"
+
+#: application/templates/base.html:285 application/templates/base.html:303
+msgid "Bidpart on Facebook"
+msgstr "Bidpart på Facebook"
+
+#: application/templates/base.html:291
+msgid "About the site"
+msgstr "Om sidan"
+
+#: application/templates/base.html:295
+msgid "Report error"
+msgstr "Felanmälan"
+
+#: application/templates/base.html:296
+msgid "Terms and Conditions"
+msgstr "Användarvillkor"
+
+#: application/templates/admin/login.html:31
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Vänligen korrigera felet nedan."
+msgstr[1] "Vänligen korrigera felen nedan"
+
+#: application/templates/admin/login.html:44
+msgid "E-mail:"
+msgstr "E-post:"
+
+#: application/templates/admin/login.html:53
+msgid "Password:"
+msgstr "Lösenord:"
+
+#: application/templates/admin/edit_inline/stacked.html:9
+msgid "Open All Items"
+msgstr "Öppna Alla Objekt"
+
+#: application/templates/admin/edit_inline/stacked.html:10
+msgid "Close All Items"
+msgstr "Stäng Alla Objekt"
+
+#: application/templates/admin/edit_inline/stacked.html:11
+#: application/templates/admin/edit_inline/stacked.html:64
+#: application/templates/admin/edit_inline/tabular.html:100
+msgid "Add Item"
+msgstr "Lägg till Objekt"
+
+#: application/templates/admin/edit_inline/stacked.html:24
+#: application/templates/admin/edit_inline/tabular.html:64
+msgid "View on Site"
+msgstr "Se på Sidan"
+
+#: application/templates/admin/edit_inline/stacked.html:26
+#: application/templates/admin/edit_inline/tabular.html:66
+msgid "Move Item"
+msgstr "Flytta Objekt"
+
+#: application/templates/admin/edit_inline/stacked.html:30
+#: application/templates/admin/edit_inline/stacked.html:35
+#: application/templates/admin/edit_inline/tabular.html:70
+#: application/templates/admin/edit_inline/tabular.html:75
+msgid "Delete Item"
+msgstr "Ta bort Objekt"
+
+#: application/templates/admin/edit_inline/stacked.html:62
+#: application/templates/admin/edit_inline/tabular.html:98
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr "Lägg till ännu en %(verbose_name)s"
+
+#: application/templates/admin/edit_inline/tabular.html:9
+msgid "Add Another"
+msgstr "Lägg till fler"
+
+#: application/templates/registration/password_change_done.html:5
+#: application/templates/registration/password_change_done.html:9
+msgid "Password change successful"
+msgstr "Lösenordet byttes framgångsrikt"
+
+#: application/templates/registration/password_change_done.html:12
+msgid "Your password was changed"
+msgstr "Ditt lösenord byttes"
+
+#: application/templates/registration/password_change_done.html:13
+msgid "continue"
+msgstr "fortsätt"
+
+#: application/templates/registration/password_change_form.html:6
+#: application/templates/registration/password_change_form.html:10
+msgid "Password change"
+msgstr "Lösenordsbyte"
+
+#: application/templates/registration/password_change_form.html:49
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Vänligen skriv till gammla lösenord, för säkerhets skull, och skriv sedan "
+"ditt nya två gånger så vi kan verifiera att du skrev rätt"
+
+#: application/templates/registration/password_reset_complete.html:5
+#: application/templates/registration/password_reset_complete.html:9
+msgid "Password reset complete"
+msgstr "Återställning av lösenord klar"
+
+#: application/templates/registration/password_reset_complete.html:12
+msgid " "
+msgstr " "
+
+#: application/templates/registration/password_reset_complete.html:14
+msgid "Your password has been set. You may go ahead and"
+msgstr "Ditt lösenord har satts. Du kan forstätta igenom att"
+
+#: application/templates/registration/password_reset_complete.html:15
+msgid "login now"
+msgstr "logga in nu"
+
+#: application/templates/registration/password_reset_confirm.html:5
+#: application/templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr "Skriv nytt lösenord"
+
+#: application/templates/registration/password_reset_confirm.html:41
+msgid ""
+"Enter your new password twice so we can verify you typed it in correctly."
+msgstr ""
+"Skriv ditt nya lösenord två gånger så vi kan verifiera att du skrev rätt."
+
+#: application/templates/registration/password_reset_confirm.html:46
+msgid "Password reset unsuccessful"
+msgstr "Återställning av lösenord misslyckades"
+
+#: application/templates/registration/password_reset_confirm.html:48
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"Återställningslänken för ditt lösenord var ogiltlig, möjligen på grund av "
+"att den redan är använd. Vänligen beställ en ny lösenordsåterställning."
+
+#: application/templates/registration/password_reset_done.html:5
+#: application/templates/registration/password_reset_done.html:8
+msgid "Password reset successful"
+msgstr "Återställning av lösenord lyckades"
+
+#: application/templates/registration/password_reset_done.html:10
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+"Vi har skickat ett e-postmeddelande till dig på hur du återställer ditt "
+"lösenord till e-postadressen du angav. Du borde få det strax."
+
+#: application/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Du har fått detta e-postmeddelande för att du begärde en återställning av "
+"ditt lösenord på %(site_name)s."
+
+#: application/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Vänligen gå till följande sida och välj ditt nya lösenord:"
+
+#: application/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Ditt användarnamn, ifall du har glömt:"
+
+#: application/templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "Tack för att du använder våran sida!"
+
+#: application/templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "Teamet på %(site_name)s"
+
+#: application/templates/registration/password_reset_form.html:5
+#: application/templates/registration/password_reset_form.html:8
+msgid "Password reset"
+msgstr "Lösenordsåterställning"
+
+#: application/templates/registration/password_reset_form.html:27
+msgid "Reset password"
+msgstr "Återställ lösenord"
+
+#: application/templates/registration/password_reset_form.html:31
+msgid ""
+"Forgotten your password? Enter your e-mail address here, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""
+"Glömt ditt lösenord? Skriv din e-postadress här, och vi kommer att skicka "
+"instruktioner på hur du sätter ett nytt."

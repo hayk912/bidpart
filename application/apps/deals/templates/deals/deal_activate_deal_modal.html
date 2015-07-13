@@ -1,0 +1,41 @@
+{% load i18n %}
+<form id="deal-activate-{{ deal.pk }}" class="form-horizontal modal hide fade" method="post" ng-controller="DealController" ng-init="id={{ deal.pk }}; action='{{ deal.ACTIVATE }}'" ng-submit="submitDealUpdate()">
+    {% csrf_token %}
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{% trans "Activate deal for ad" %} {{ deal.ad }}</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-show="valid" class="alert alert-success">
+            <h3>{% trans "The deal is now activated." %}</h3>
+        </div>
+        <div ng-hide="valid">
+			<p>
+				{% trans "By activating this deal you'll be granted access to the other partys contact information." %}
+            </p>
+			<p>
+				<i>
+					"The equipment requested is to be considered exclusive for customers who require the equipment which means that the purchase of this equipment, to that particular customer, directly or indirectly, may only be conducted in collaboration with Bidpart AB. Other equipment sold by you to this customer because of the interest in this notice are also included in the fee calculation and reported by you to us."
+                </i>
+            </p>
+            <hr>
+            <div class="row-fluid">
+                <div class="span2">
+                    <label>{% trans 'Quantity' %}</label>
+                   {{ deal.amount }}
+                </div>
+                <div class="span6">
+                    <label>{% trans 'Price' %}</label>
+                    {{ deal.bid }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p ng-show="!!errors['action']">
+            <span class="error" ng-repeat="error in errors['action']">{! error !}</span>
+        </p>
+        <a href="#deal-{{ deal.pk }}" data-toggle="modal" data-dismiss="modal" class="btn pull-left">{% trans "Close" %}</a>
+        <input ng-hide="valid" type="submit" class="btn btn-primary" value="{% trans "Send" %}">
+    </div>
+</form>

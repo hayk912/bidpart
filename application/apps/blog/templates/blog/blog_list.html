@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block header_search_form %}
+    <h1>{% trans 'Blog' %}</h1>
+{% endblock %}
+{% block content %}
+    <ul class="blog-list">
+        {% for entry in blogentry_list %}
+            <li>{% include 'blog/blog_entry.html' with entry=entry list_view=1 %}</li>
+        {% empty %}
+            <li>{% trans 'No blog entries found.' %}</li>
+        {% endfor %}
+     </ul>
+    {#% pagination %#}
+{% endblock %}

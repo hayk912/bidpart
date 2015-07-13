@@ -1,0 +1,59 @@
+{% load i18n l10n %}
+<form id="create-deal" class="form-horizontal modal hide fade" method="post" ng-controller="DealController" ng-submit="submitDealCreate()">
+    {% csrf_token %}
+    <input type="hidden" name="ad" ng-model="ad" id="id_ad" ng-init="ad={{ ad.pk|unlocalize }}" />
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{% trans "Sign of interest" %}</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-show="valid" class="alert alert-success">
+            <h3>{% trans "Your sign of interest is now sent." %}</h3>
+        </div>
+        <div ng-hide="valid">
+            <p>
+                {% trans 'With your consent, your contact information will be sent to the owner of the equipment. When the owner is aware of your contact information he can contact you regarding your inquiry.' %}
+            </p>
+            <hr>
+            <ul class="errorlist" ng-show="!!errors['__all__']">
+                <li ng-repeat="error in errors['__all__']">{! error !}</li>
+            </ul>
+            <div class="row-fluid">
+                <div class="span2">
+                    <label for="amount">{% trans 'Quantity' %}</label>
+                    <input type="number" name="amount" id="amount" ng-model="amount" min="1" max="{{ ad.amount }}" ng-change="bid=amount*{{ ad.float_price }}" ng-init="amount={{ ad.amount }}">
+                    <ul class="errorlist" ng-show="!!errors['amount']">
+                        <li ng-repeat="error in errors['amount']">{! error !}</li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <label for="bid">{% trans 'Price' %}</label>
+                    <div class="input-append amount">
+                        <input type="text" id="bid" name="bid" ng-disabled="!do_bid" ng-model="bid" ng-init="bid=amount*{{ ad.float_price }}">
+                        <div class="add-on">
+                            {{ ad.currency.code }}
+                        </div>
+                    </div>
+                    <ul class="errorlist" ng-show="!!errors['bid']">
+                        <li ng-repeat="error in errors['bid']">{! error !}</li>
+                    </ul>
+                    {% if ad.is_request %}
+                        <small>{% trans 'Bidparts commission is 10&#37; (minimum € 60) and based on the final price of each individual deal.' %}</small>
+                    {% endif %}
+                </div>
+                <div class="span4">
+                    <label class="checkbox do-bid">
+                        <input type="checkbox" name="do_bid" class="checkbox" ng-model="do_bid" {% if ad.price == 0 %} ng-init="do_bid=true"{% endif %}>
+                        {% trans 'Place your own bid' %}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0);" ng-hide="valid" data-dismiss="modal" class="btn pull-left">{% trans "Close" %}</a>
+        <input ng-hide="valid" type="submit" class="btn btn-primary" value="{% trans "Send" %}">
+        <a href="javascript:void(0);" ng-show="valid" data-dismiss="modal" class="btn btn-success">{% trans "Close" %}</a>
+    </div>
+</form>
+

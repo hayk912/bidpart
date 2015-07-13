@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load cms_extras files_extras locale_extras %}
+
+{% block header_search_form %}
+	<h1>{% get_localized page 'title' %}</h1>
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div class="span9">
+			{% get_localized page 'body' %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="span9">
+			{% for image in page.images.all %}
+                <img src="{% get_thumb image 'list_thumb' %}">
+
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}

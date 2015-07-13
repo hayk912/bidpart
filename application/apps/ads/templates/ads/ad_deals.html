@@ -1,0 +1,14 @@
+{% load i18n ads_extras %}
+<div class="status-info">
+	{% if group == 'ads' %}
+        <span class="badge{% if ad.num_interested %} badge-info{% endif %}">{{ ad.num_interested }}</span> {% trans 'interests' %} |
+        <span class="badge{% if ad.num_active %} badge-info{% endif %}">{{ ad.num_active }}</span> {% trans 'deals' %} |
+        <span class="badge{% if ad.num_completed %} badge-info{% endif %}">{{ ad.num_completed }}</span> {% trans 'completed' %}
+    {% else %}
+        {% for deal in ad.deals.all %}
+            {% trans 'State' %}: <span class="badge badge-info">{{ deal.get_state_display }}</span><br />
+            {% trans 'Your bid' %}: <span class="badge badge-info">{% price deal.bid deal.currency '' False %}</span>
+        {% endfor %}
+	{% endif %}
+
+</div>

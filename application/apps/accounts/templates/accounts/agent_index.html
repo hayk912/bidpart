@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load accounts_extras i18n ads_extras locale_extras %}
+{% block title %}{{ request.user.get_business_profile }}{% endblock %}
+{% block header_search_form %}
+    <div class="account-header row">
+        <div class="span6">
+            <h2>
+                {{ request.user.get_business_profile }}
+                <span>
+                    {{ request.user.get_full_name }}
+                </span>
+            </h2>
+        </div>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+
+{% endblock %}
+
+{% block sidebar_middle %}
+    <form action="{{ request.path }}" method="post">
+        {% csrf_token %}
+        {% for hidden in invite_form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+
+        <div class="well">
+            <div class="row-fluid">
+                <div class="span12">
+                    {{ invite_form.email.label_tag }}
+                    {{ invite_form.email }}
+                    {{ invite_form.email.errors }}
+                </div>
+                <input type="submit" class="btn btn-success pull-right" name="do_invite" value="{% trans 'Send invite' %}">
+            </div>
+        </div>
+    </form>
+    {% commission_levels levels=settings.AGENT_COMMISSION_LEVELS %}
+{% endblock %}
+
+{% block content %}
+    <ul class="breadcrumb">
+        <li>{{ request.user.get_business_profile }} <span class="divider">/</span></li>
+        <li class="active">{% trans 'Dashboard' %}</li>
+    </ul>
+    {% agent_accounts_dashboard %}
+    <form action="{{ request.path }}" class="form-horizontal">
+        <div class="input-append">
+            {{ search_form.q }}
+            {{ search_form.state }}
+            <input type="submit" class="btn btn-success" value="{% trans 'Search' %}">
+        </div>
+    </form>
+    <form class="form-inline" method="post" target="_blank" action="{{ request.path }}">
+        {% csrf_token %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>{% trans 'Ad' %}</th>
+                <th>{% trans 'Status' %}</th>
+                <th>{% trans 'Bid' %}</th>
+                <th>{% trans 'End-price (EUR)' %}</th>
+                <th>{% trans 'Your profit (EUR)' %}</th>
+                <th>{% trans 'Invoice' %}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for deal in deal_list %}
+                <tr>
+                    <td>
+                        <a href="{{ deal.ad.get_absolute_url }}">{% get_localized deal.ad 'title' %}</a>
+                    </td>
+                    <td>{{ deal.state }}</td>
+                    <td>{% price deal.bid deal.currency  %}</td>
+                    {% if deal.state == 'completed' %}
+                        <td>{{ deal.price_eur }}</td>
+                        <td>{% calc_agent_commission deal.commission deal_agent_price_sum %}</td>
+                    {% else %}
+                        <td>-</td>
+                        <td>-</td>
+                    {% endif %}
+
+                    {% if deal.state == 'completed' %}
+                        {% if deal.payed_to_agent %}
+                            <td>{% trans 'Already billed' %}</td>
+                        {% else %}
+                            <td>
+                                <button class="btn btn-small btn-success" name="deals" value="{{ deal.pk }}">{% trans 'Download invoice base' %}</button>
+                            </td>
+                        {% endif %}
+                    {% else %}
+                        <td>-</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </form>
+    {% pagination %}
+
+{% endblock %}

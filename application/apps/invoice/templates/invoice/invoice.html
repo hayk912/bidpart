@@ -1,0 +1,181 @@
+{% extends "invoice/base.html" %}
+{% load static i18n l10n %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+{% localize off %}
+<table width="100%">
+	<tr>
+		<td width="50%"><img src="{% static 'invoice/img/logo.jpg' %}" width="85%" /></td>
+		<td width="50%">
+			<div class="p7 pt3 pb3 bordered"><h2>{{ invoice.title }}</h2></div>
+			<div class="p7 pt3 pb3 bordered">
+				<table width="100%">
+					<tr>
+						<td width="50%">
+							<h3><strong>{% trans "Invoice number" %}</strong></h3>
+							{{ invoice.pk }}
+						</td>
+						<td align="right">
+							<h3><strong>{% trans "Invoice date" %}</strong></h3>
+                            {% if invoice.sent_timestamp %}
+                                {{ invoice.sent_timestamp|date:'Y-m-d' }}
+                            {% else %}
+                                <i>{% trans 'Not yet sent.' %}</i>
+                            {% endif %}
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="p7 pt3 bordered">
+				<h3>{% trans "Invoice address" %}</h3>
+				{{ invoice.receiver.business_name }}<br />
+                {{ invoice.receiver.address }}<br />
+                {{ invoice.receiver.address_zipcode }} {{ invoice.receiver.address_city }}<br />
+                {{ invoice.receiver.country }}
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="pt10">
+			<table width="100%">
+				<tr>
+					<td><strong>{% trans "Your reference" %}</strong></td>
+					<td>{{ invoice.your_reference.first_name }} {{ invoice.your_reference.last_name }}</td>
+				</tr>
+			</table>
+		</td>
+		<td class="pt10">
+			<table width="100%">
+				<tr>
+					<td><strong>{% trans "Our reference" %}</strong></td>
+                    <td>{{ invoice.our_reference.first_name }} {{ invoice.our_reference.last_name }}</td>
+				</tr>
+            	{% if not invoice.is_basis %}
+                    <tr>
+                        <td class="pt3"><strong>{% trans "Payment terms" %}</strong></td>
+                        <td class="pt3">{% trans '10 days net' %}</td>
+                    </tr>
+                    <tr>
+                        <td class="pt3"><strong>{% trans "Expiration date" %}</strong></td>
+                        <td class="pt3">
+                            {% if invoice.expiration %}
+                                {{ invoice.expiration|date:'Y-m-d' }}
+                            {% else %}
+                                <i>{% trans 'Not sent yet' %}</i>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pt3"><strong>{% trans "Penalty interest rate" %}</strong></td>
+                        <td class="pt3">11,00%</td>
+                    </tr>
+            	{% endif %}
+			</table>
+		</td>
+	</tr>
+</table>
+<div class="bordered mt20">
+<table width="100%" height="385">
+	<tr>
+		<td class="p7">
+			<table width="100%">
+				{% for row in invoice.row_set.all %}
+				<tr>
+					<td width="15%">{{ row.identifier }}</td>
+					<td width="65%">
+						<strong>{{ row.title }}</strong>
+					</td>
+					<td width="20%" align="right">{{ row.price }} {{ invoice.currency.code }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="bordered mt20">
+<table width="100%">
+	<tr>
+		<td class="p7">
+			<table width="100%">
+				<tr>
+					<td width="60%" align="right">
+						<ul>
+							<li>{% trans "Subtotal" %}:</li>
+							<li>{% trans "Tax rate" %} 25%:</li>
+							<li>&nbsp;</li>
+							<li><strong>{% trans "Total" %}:</strong></li>
+						</ul>
+					</td>
+					<td width="40%" align="right">
+						<ul>
+							<li>{{ invoice.total_price }} {{ invoice.currency.code }}</li>
+							<li>{{ invoice.total_vat }} {{ invoice.currency.code }}</li>
+							<li>&nbsp;</li>
+							<li><strong>{{ invoice.total_inc_vat }} {{ invoice.currency.code }}</strong></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<table width="100%" class="mt20">
+	<tr>
+		<td width="25%">
+			<b>Adress</b>
+			<ul>
+				<li>Bidpart AB</li>
+				<li>Nytorgsgatan 17B</li>
+				<li>&nbsp;</li>
+				<li>891 34 Örnsköldsvik</li>
+				<li>Sweden</li>
+			</ul>
+		</td>
+		<td width="25%">
+			<strong>Telefon</strong>
+			<ul>
+				<li>+46 (0)660-511 77</li>
+			</ul>
+			<strong>Fax</strong>
+			<ul>
+				<li>+46 (0)660-511 20</li>
+			</ul>
+			<strong>Företagets säte</strong>
+			<ul>
+				<li>Västernorrlands län</li>
+			</ul>
+		</td>
+		<td width="25%">
+			<strong>Bankgiro</strong>
+			<ul>
+				<li>726-7925</li>
+			</ul>
+			<strong>Organisationsnr</strong>
+			<ul>
+				<li>556818-5663</li>
+			</ul>
+		</td>
+		<td width="25%">
+			<strong>Internet</strong>
+			<ul>
+				<li>www.bidpart.se</li>
+			</ul>
+			<strong>e-post</strong>
+			<ul>
+				<li>info@bidpart.se</li>
+			</ul>
+			<strong>Momsreg.nr</strong>
+			<ul>
+				<li>SE556818566301</li>
+				<li>Innehar F-skattbevis</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+{% endlocalize %}
+{% endblock %}

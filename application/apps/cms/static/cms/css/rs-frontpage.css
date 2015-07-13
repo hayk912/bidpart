@@ -1,0 +1,136 @@
+/******************************
+*
+*  RoyalSlider Default Skin
+*
+*    1. Arrows
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+*
+******************************/
+
+
+/* Background */
+.rsFrontpage .rsOverflow,
+.rsFrontpage .rsSlide,
+.rsFrontpage .rsVideoFrameHolder,
+.rsFrontpage .rsThumbs {
+	background: transparent;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsFrontpage .rsArrow {
+	height: 100%;
+	width: 44px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+.rsFrontpage.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+
+}
+.rsFrontpage.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsFrontpage.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsFrontpage.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rsFrontpage.rsHor .rsArrowRight { right: 0; top:0; }
+
+.rsFrontpage .rsArrowIcn {
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;
+	margin-left: -16px;
+
+	position: absolute;
+	cursor: pointer;
+	background: url('../../cms/img/rs-frontpage.png');
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #111;
+
+	border-radius: 2px;
+}
+.rsFrontpage .rsArrowIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+.rsFrontpage.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.rsFrontpage.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.rsFrontpage.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsFrontpage.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsFrontpage .rsArrowDisabled .rsArrowIcn { background-color: rgba(0,0,0,0.4); opacity: .4; *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsFrontpage .rsBullets {
+	position: absolute;
+	z-index: 35;
+	left: 177px;
+	bottom: 60px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background: transparent;
+	text-align: left;
+	line-height: 18px;
+	overflow: hidden;
+}
+.rsFrontpage .rsBullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	margin: 0 2px 1px;
+	border-radius: 50%;
+	background: #777;
+	background: rgba(0, 0, 0, 0.5);
+}
+.rsFrontpage .rsBullet.rsNavSelected  {
+	background-color: #FFF;
+}
+
+
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsFrontpage .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../../core/img/preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;
+}

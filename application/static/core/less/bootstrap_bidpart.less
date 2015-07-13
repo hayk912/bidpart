@@ -1,0 +1,153 @@
+@import "./bootstrap/variables.less";
+@import "./bootstrap/mixins.less";
+
+html {
+	overflow-y:scroll;
+	&.no-scroll {
+		overflow-y:hidden;
+	}
+}
+
+.orange {
+  color: #d17300;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.modal {
+	.modal-header {
+		h1, h2, h3, h4, h5, h6 {
+			color:@blue;
+		}
+		border-bottom-color:#CCC;
+	}
+	hr {
+		border-top-color:#EEE;
+	}
+}
+
+.page-header:first-child {
+	margin-top:0px;
+	h1,h2,h3,h4,h5,h6 { margin-top:0px; }
+}
+
+.btn.btn-important {
+	.border-radius(6px);
+	border:2px solid darken(@orange, 10%);
+	display:inline-block;
+	padding:10px 12px;
+
+	&.btn-primary {
+		.box-shadow(inset 0px 1px 0px 0px #df9d4d);
+		color:@white;
+		font-weight:bold;
+		font-size:18px;
+		text-shadow:0px 2px 0px #8c4400;
+	}
+}
+
+.input-append {
+	.btn { line-height:16px; }
+}
+
+.btn {
+	line-height:17px;
+}
+
+.btn.btn-icon {
+	text-align:left;
+	[data-icon] {
+		float:right;
+	}
+}
+
+.btn [data-icon] {
+}
+.btn .caret {
+	margin-top:6px;
+}
+
+.header-filter {
+  position:absolute;
+  top:100px;
+}
+
+.btn.dropdown-toggle {
+	&.dropdown-arrow {
+
+		text-align:left;
+		&:after {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-top:   4px solid @black;
+			border-right: 4px solid transparent;
+			border-left:  4px solid transparent;
+			content: "";
+			float:right;
+			margin-top:6px;
+			margin-left:10px;
+		}
+
+		&.btn-info:after {
+			border-top:   4px solid @white;
+			border-right: 4px solid transparent;
+			border-left:  4px solid transparent;
+		}
+	}
+}
+
+table td {
+	border-top:none;
+	border-bottom:1px solid @tableBorder;
+}
+
+.pagination {
+	margin-top:30px;
+
+	.pagination-section {
+		float:left;
+		min-height:1px;
+		ul {
+			display:inline-block;
+		}
+
+		&.prev { text-align:left; width:120px; }
+		&.next { text-align:right; width:120px; }
+		&.numbers { text-align:center; width:460px; }
+	}
+
+}
+
+.nav > li > a:hover {
+	background-color:@wellBackground;
+}
+
+.tspan(@col) {
+	width:@col * 8.333333333%;
+}
+
+td,th {
+	&.twidth1 { .tspan(1); }
+	&.twidth2 { .tspan(2); }
+	&.twidth3 { .tspan(3); }
+	&.twidth4 { .tspan(4); }
+	&.twidth5 { .tspan(5); }
+	&.twidth6 { .tspan(6); }
+	&.twidth7 { .tspan(7); }
+	&.twidth8 { .tspan(8); }
+	&.twidth9 { .tspan(9); }
+	&.twidth10 { .tspan(10); }
+	&.twidth11 { .tspan(11); }
+	&.twidth12 { .tspan(12); }
+}
+
+address.contact {
+	margin-top: 20px;
+	a {
+		color: #999999;
+	}
+}
+

@@ -1,0 +1,175 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #848484;
+@grayLight:             #999;
+@grayLighter:           #ccc;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #006c9e;
+@blueDark:              #003D5A;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #d17300;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @grayLight;
+
+
+// Links
+// -------------------------
+@linkColor:             #0084c7;
+@linkColor2:            @orange;
+@linkColorHover:        darken(@linkColor, 15%);
+@linkColor2Hover:       darken(@linkColor2, 15%);
+
+
+// Typography
+// -------------------------
+@baseFontSize:          12px;
+@baseLineHeight:        16px;
+
+@headingsColor:         @gray;
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@btnBackground, 10%);
+@btnBorder:                         #bbb;
+
+@btnPrimaryBackground:              @orange;
+@btnPrimaryBackgroundHighlight:     #c45b00; //darken(@btnPrimaryBackground, 5%);
+
+@btnInfoBackgroundHighlight:        darken(#008ecd, 2%);
+@btnInfoBackground:                 #008ecd;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+
+// Forms
+// -------------------------
+@inputBackground:               lighten(@grayLighter, 18%);
+@inputBorder:                   @grayLighter;
+@inputBorderRadius:             3px;
+@inputDisabledBackground:       lighten(@grayLighter, 12%);
+@formActionsBackground:         #f5f5f5;
+@inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+@addOnBackground:               darken(@inputBackground, 8%);
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @grayLight;
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @grayLighter;
+
+
+// Horizontal forms & lists
+// -------------------------
+@horizontalComponentOffset:       180px;
+
+
+// Wells
+// -------------------------
+@wellBackground:                  #f5f5f5;
+
+
+// Navbar
+// -------------------------
+@navbarCollapseWidth:             979px;
+
+@navbarHeight:                    37px;
+@navbarBackgroundHighlight:       @blueDark;
+@navbarBackground:                @blueDark;
+@navbarBorder:                    lighten(@navbarBackground, 20%);
+
+@navbarText:                      #6792A5;
+@navbarLinkColor:                 @navbarText;
+@navbarLinkColorHover:            lighten(@navbarText, 30%);
+@navbarLinkColorActive:           lighten(@navbarText, 30%);
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+
+@navbarBrandColor:                @navbarLinkColor;
+
+// Inverted navbar
+@navbarInverseHeight:                    80px;
+@navbarInverseBackgroundHighlight:       @blue;
+@navbarInverseBackground:                darken(@navbarInverseBackgroundHighlight, 2%);
+@navbarInverseBorder:                    #e8e8e8;
+
+@navbarInverseText:                      @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            @grayLighter;
+@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
+@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBorder:              @navbarInverseBackground;
+@navbarInverseSearchPlaceholderColor:    #ccc;
+
+@navbarInverseBrandColor:                @navbarInverseLinkColor;
+
+
+// Pagination
+// -------------------------
+@paginationBackground:                #fff;
+@paginationBorder:                    #ddd;
+@paginationActiveBackground:          #f5f5f5;
+
+// Form states and alerts
+// -------------------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+// Sprite icons path
+// -------------------------
+@iconSpritePath:          "../../core/img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../../core/img/glyphicons-halflings-white.png";

@@ -1,0 +1,83 @@
+@import "./bootstrap/variables.less";
+@import "./bootstrap/mixins.less";
+
+.dashboard {
+    border: none;
+    &.big {
+        .span3 {
+            text-align: center;
+            width: 200px;
+            div {
+                color:  #666;
+                font-size: 74px;
+                font-weight: bold;
+                line-height: 74px;
+            }
+        }
+    }
+    &.meter {
+        h3 {
+            display: inline-block;
+            font-size: 15px;
+            margin: 0 10px 0 0;
+            line-height: 18px;
+        }
+        span {
+            cursor: help;
+        }
+        .span3:first-child {
+            width: 250px;
+        }
+        .span2 {
+            width: 72px;
+        }
+        .progress {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.breadcrumb {
+    background: none;
+    padding: 0;
+    li {
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.account-header {
+    .span6 {
+        width: 457px;
+    }
+    h2 {
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 23px 0;
+        span {
+            color: #86c1de;
+            font-weight: normal;
+        }
+    }
+    .switch-wrapper {
+        margin-top: 20px;
+    }
+}
+
+
+.status-info {
+    .badge {
+        .border-radius(3px);
+        line-height: 10px;
+        padding: 3px 5px;
+    }
+    span {
+        + .badge-info {
+            background: @orange;
+        }
+    }
+}

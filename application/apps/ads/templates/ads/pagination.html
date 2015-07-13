@@ -1,0 +1,46 @@
+{% load ads_extras i18n %}
+{% if paginator.num_pages > 1 %}
+    <div class="pagination">
+        <div class="pagination-section prev">
+            {% if page_obj.has_previous %}
+                <ul>
+                    {% if filter_form %}
+						<li><a href="{% filter_href 'page' page_obj.previous_page_number filter_form %}">{% trans 'Prev' %}</a></li>
+						<li><a href="{% filter_href 'page' 1 filter_form %}">{% trans 'First' %}</a></li>
+                    {% else %}
+                        <li><a href="{{ request.path }}?{% append_to_get 'page' page_obj.previous_page_number  %}">{% trans 'Prev' %}</a></li>
+                        <li><a href="{{ request.path }}?{% append_to_get 'page' 1 %}">{% trans 'First' %}</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="pagination-section numbers">
+            <ul>
+                {% for page_number in pages %}
+                    {% if page_number == page_obj.number %}
+                        <li class="active"><a href="javascript:void(0);">{{ page_number }}</a></li>
+                    {% else %}
+                        {% if filter_form %}
+                            <li><a href="{% filter_href 'page' page_number filter_form %}">{{ page_number }}</a></li>
+                        {% else %}
+                            <li><a href="{{ request.path }}?{% append_to_get 'page' page_number %}">{{ page_number }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="pagination-section next">
+            {% if page_obj.has_next %}
+                <ul>
+                	{% if filter_form %}
+                        <li><a href="{% filter_href 'page' paginator.num_pages filter_form %}">{% trans 'Last' %}</a></li>
+                        <li><a href="{% filter_href 'page' page_obj.next_page_number filter_form %}">{% trans 'Next' %}</a></li>
+                    {% else %}
+                        <li><a href="{{ request.path }}?{% append_to_get 'page' paginator.num_pages %}">{% trans 'Last' %}</a></li>
+                        <li><a href="{{ request.path }}?{% append_to_get 'page' page_obj.next_page_number %}">{% trans 'Next' %}</a></li>
+                	{% endif %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

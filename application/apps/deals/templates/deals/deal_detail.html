@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ deal.creator }} ({{ deal.owner }}) har en deal ({{ deal.get_state_display }}) på {{ deal.ad }} som säljs av {{ deal.ad.owner }} ({{ deal.ad.creator }})
+
+{% endblock %}

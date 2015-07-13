@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static mptt_tags i18n markup faq_tags %}
+
+{% block content %}
+
+    <div class="page-header">
+    <h1>{% trans 'FAQ' %}</h1>
+    </div>
+
+    <section>
+        <div class="page-header">
+            <h2>{% trans 'Questions' %}</h2>
+        </div>
+        <ul>
+            {% recursetree groups %}
+                {% if node.faqquestion_set|get_allowed_questions:user.is_authenticated %}
+                <li>
+                    <h3>{{ node.name }}</h3>
+                        <ul class="leaves">
+                        {% for question in node.faqquestion_set|get_allowed_questions:user.is_authenticated %}
+                            <li>
+                                <a href="#question-{{ question.id }}">{{ question.question }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+
+                    {% if not node.is_leaf_node %}
+                        <ul class="children">
+                            {{ children }}
+                        </ul>
+                    {% endif %}
+                </li>
+                {% endif %}
+            {% endrecursetree %}
+        </ul>
+    </section>
+    <section id="answers">
+        <div class="page-header">
+            <h2>{% trans 'Answers' %}</h2>
+        </div>
+        {% for question in questions %}
+            <article id="question-{{ question.id }}">
+                <h3>{{ question.question }}</h3>
+                <p>{{ question.answer|markdown }}</p>
+            </article>
+        {% endfor %}
+        </div>
+    </section>
+{% endblock %}

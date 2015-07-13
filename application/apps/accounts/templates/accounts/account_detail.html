@@ -1,0 +1,51 @@
+{% extends "accounts/index.html" %}
+{% load i18n %}
+{% block content %}
+	<div class="page-header row">
+		<h3>{% trans 'Account' %}</h3>
+	</div>
+
+	<p>
+		<b>{% trans 'First name' %}:</b>
+		<span>{{ request.user.first_name }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Last name' %}:</b>
+		<span>{{ request.user.last_name }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Phone' %}:</b>
+		<span>{{ request.user.get_business_profile.phone }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Email' %}:</b>
+		<span>{{ request.user.email }}</span>
+	</p>
+
+	<div class="page-header row">
+		<h3>{% trans 'Company' %}</h3>
+	</div>
+	<p>
+		<b>{% trans 'Business name' %}:</b>
+		<span>{{ request.user.get_business_profile.business_name }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Country' %}:</b>
+		<span>{{ request.user.get_business_profile.address_country }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Address' %}:</b>
+		<span>{{ request.user.get_business_profile.address }}</span>
+	</p>
+	<p>
+		<b>{% trans 'Zipcode' %}:</b>
+		<span>{{ request.user.get_business_profile.address_zipcode }}</span>
+	</p>
+	<p>
+		<b>{% trans 'City' %}:</b>
+		<span>{{ request.user.get_business_profile.address_city }}</span>
+	</p>
+
+
+{% endblock %}
+

@@ -1,0 +1,119 @@
+{% extends "accounts/index.html" %}
+{% load i18n %}
+{% block sidebar_middle %}
+{% endblock %}
+{% block content %}
+
+    <form action="{% url accounts:account_form %}" method="POST" class="form-big form-signup span9">
+        {% if messages %}
+			{% for message in messages %}
+                <div class="alert {{ message.tags }}">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+			{% endfor %}
+        {% endif %}
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+        {{ form.non_field_errors }}
+
+        <fieldset>
+            <legend>
+                <span class="blue-blup">1</span>
+                {% trans 'Account' %}
+            </legend>
+
+            <div class="row">
+                <div class="span3">
+                    {{ form.first_name.label_tag }}
+                    {{ form.first_name }}
+                    {{ form.first_name.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.last_name.label_tag }}
+                    {{ form.last_name }}
+                    {{ form.last_name.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.phone.label_tag }}
+                    {{ form.phone }}
+                    {{ form.phone.errors }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.email_confirm.label_tag }}
+                    {{ form.email_confirm }}
+                    {{ form.email_confirm.errors }}
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <span class="blue-blup">2</span>
+                {% trans 'Company' %}
+            </legend>
+
+            <div class="row">
+                <div class="span6">
+                    {{ form.business_name.label_tag }}
+                    {{ form.business_name }}
+                    {{ form.business_name.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.country.label_tag }}
+                    {{ form.country }}
+                    {{ form.country.errors }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="span3">
+                    {{ form.address.label_tag }}
+                    {{ form.address }}
+                    {{ form.address.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.address_zipcode.label_tag }}
+                    {{ form.address_zipcode }}
+                    {{ form.address_zipcode.errors }}
+                </div>
+                <div class="span3">
+                    {{ form.address_city.label_tag }}
+                    {{ form.address_city }}
+                    {{ form.address_city.errors }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6">
+					{{ form.business_description.label_tag }}
+					{{ form.business_description }}
+					{{ form.business_description.errors }}
+                </div>
+            </div>
+        </fieldset>
+
+    	<div class="form-actions">
+			<div class="row-fluid">
+				<div class="span9">
+                    <label class="checkbox ">
+						{{ form.newsletter }}
+						{{ form.newsletter.label }}
+                    </label>
+				</div>
+                <div class="span3">
+                    <input type="submit" value="{% trans 'Update details' %}" class="btn btn btn-success pull-right" />
+                </div>
+			</div>
+
+
+    	</div>
+    </form>
+
+{% endblock %}

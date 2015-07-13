@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load angular_extras %}
+<form ng-cloak ng-controller="HeaderFilterController" ng-submit="submit()" ng-init='{{ form|ng_init }}' class="navbar-form pull-left">
+    <span class="navbar-form-text">{% trans 'Search for' %}</span>
+    {% with search=form.search %}
+        <input type="search" class="main-search btn-important" ng-model="fields.{{search.html_name}}.value" placeholder="{{search.label}}">
+    {% endwith %}
+    <span class="navbar-form-text navbar-form-text-in">{% trans 'in' %}</span>
+	{{ form.business_domain }}
+    <input type="submit" class="btn btn-important btn-primary" value="{% trans 'Search' %}">
+
+	<div ng-show="filter_open" ng-cloak class="header-filter well">
+        <h2>More options!</h2>
+	</div>
+</form>

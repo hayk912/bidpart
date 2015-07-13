@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<section>
+    <div class="page-header">
+        <h1>{% trans "Contact us" %}</h1>
+    </div>
+
+    <div class="row">
+        <div class="span5">
+
+            <form action="{% url contact:index %}" method="post">
+                {% csrf_token %}
+
+                {{ form.non_field_errors }}
+
+                <fieldset>
+                    <div class="control-group {{ form.subject.errors|yesno:"error," }}">
+                        <label for="id_subject">{% trans "Subject:" %}</label>
+                        <input type="text" class="span5" maxlength="30" name="subject" id="id_subject" value="{{ form.subject.value|default_if_none:"" }}" {% if form.subject.errors %}rel="tooltip" title="{{ form.subject.errors|join:", " }}" {% endif %} />
+                    </div>
+                    <div class="control-group {{ form.message.errors|yesno:"error," }}">
+                        <label for="id_message">{% trans "Message:" %}</label>
+                        <textarea name="message" class="span5" id="id_message" rows="7" {% if form.message.errors %}rel="tooltip" title="{{ form.message.errors|join:", " }}" {% endif %}>{{ form.message.value|default_if_none:"" }}</textarea>
+                    </div>
+                    <div class="control-group {{ form.name.errors|yesno:"error," }}">
+                        <label for="id_name">{% trans "Your name:" %}</label>
+                        <input type="text" class="span5" maxlength="30" name="name" id="id_name" value="{{ form.name.value|default_if_none:"" }}" {% if form.name.errors %}rel="tooltip" title="{{ form.name.errors|join:", " }}" {% endif %} />
+                    </div>
+                    <div class="control-group {{ form.email.errors|yesno:"error," }}">
+                        <label for="id_email">{% trans "Your e-mail address:" %}</label>
+                        <input type="text" class="span5" maxlength="30" name="email" id="id_email" value="{{ form.email.value|default_if_none:"" }}" {% if form.email.errors %}rel="tooltip" title="{{ form.email.errors|join:", " }}" {% endif %} />
+                    </div>
+                    <div class="control-group {{ form.cc_myself.errors|yesno:"error," }}">
+                        <label for="id_cc_myself">{{ form.cc_myself }} {% trans "Send me a copy of the support ticket." %}</label>
+                    </div>
+                </fieldset>
+
+                <div class="control-group"><input type="submit" value="{% trans 'Send' %}" class="btn" /></div>
+            </form>
+
+        </div>
+    	<div class="span4">
+			<address class="contact well">
+                <b>Bidpart AB</b><br />
+                <span>Nyborgsgatan 17b</span><br />
+                <span>891 34 Örnsköldsvik</span><br />
+                <span>Sweden</span><br />
+				<br />
+				<a href="mailto:info@bidpart.se">info@bidpart.se</a><br />
+				<b>{% trans 'Tel' %}:</b> <a href="tel:004666051177">+46 660 511 77</a><br />
+                <b>{% trans 'Fax' %}:</b> <a href="fax:004666051120">+46 660 511 20</a>
+			</address>
+    	</div>
+    </div>
+
+</section>
+
+{% endblock %}

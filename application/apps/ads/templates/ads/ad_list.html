@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load cms_extras ads_extras i18n %}
+
+{% block javascript %}
+	{{ block.super }}
+    <script type="text/javascript">
+        $(document).ready(function(){
+			ad_list_sidebar.init();
+        });
+    </script>
+{% endblock %}
+
+{% block header_search_form %}
+    {% header_search filter_form.cleaned_data %}
+{% endblock %}
+
+{% block sidebar %}
+    {% ad_filter_sidebar form=filter_form %}
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div id="ad-list" class="span9 ad-list" ng-controller="AdList">
+        	{% if show_slider %}
+				{% frontpage_slider %}
+        	{% endif %}
+			<form action="{{ request.path }}" class="form-horizontal">
+				{{ filter_form.errors }}
+				{{ filter_form.non_field_errors }}
+
+				{% if filter_form.filter_fields %}
+					<div class="ads-filter well clearfix">
+						<div class="clearfix">
+							{% for field_key, field in filter_form.filter_fields %}
+								{% if field.choices %}
+									<div class="filter-item">
+										<h5>{{ field.label }}</h5>
+										<ul class="choices">
+											{% for choice in field.choices %}
+												<li class="{% selected_class field_key choice.0 filter_form %}">
+													<a href="{% filter_href field_key choice.0 filter_form %}">{{ choice.1 }}</a>
+												</li>
+											{% endfor %}
+										</ul>
+									</div>
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			</form>
+
+        	{% if featured_ads %}
+                {% trans 'Featured ads' as featured_queryset_name %}
+                {% trans 'Latest ads' as latest_queryset_name %}
+                {% include 'ads/ad_list_table.html' with queryset=featured_ads queryset_name=featured_queryset_name name_icon='&#xe003;' form=None %}
+                {% include 'ads/ad_list_table.html' with queryset=ad_list form=filter_form queryset_name=latest_queryset_name name_icon='&#xe005;' %}
+                <p class="align-right"><a class="btn btn-primary" href="{% url ads:ad_filter 'all' %}">{% trans 'See more of the latest ads' %}</a></p>
+        	{% else %}
+                {% include 'ads/ad_list_table.html' with queryset=ad_list form=filter_form %}
+                {% pagination %}
+        	{% endif %}
+		</div>
+	</div>
+{% endblock %}

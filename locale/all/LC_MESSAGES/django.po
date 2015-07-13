@@ -1,0 +1,1984 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-07 16:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: application/dashboard.py:23
+msgid "Recent Actions"
+msgstr ""
+
+#: application/dashboard.py:85
+msgid "Users & Businesses"
+msgstr ""
+
+#: application/dashboard.py:94
+msgid "Ads & Deals"
+msgstr ""
+
+#: application/dashboard.py:103
+msgid "Site content"
+msgstr ""
+
+#: application/dashboard.py:111
+msgid "Files & Images"
+msgstr ""
+
+#: application/dashboard.py:119
+#: application/apps/accounts/templates/accounts/sidebar.html:5
+msgid "Settings"
+msgstr ""
+
+#: application/dashboard.py:127
+msgid "Admin logs"
+msgstr ""
+
+#: application/dashboard.py:135
+msgid "All Recent Actions"
+msgstr ""
+
+#: application/dashboard.py:143
+msgid "Your Recent Actions"
+msgstr ""
+
+#: application/settings.py:58
+msgid "English"
+msgstr ""
+
+#: application/settings.py:59
+msgid "Swedish"
+msgstr ""
+
+#: application/settings.py:80
+msgid "Buy & Sell"
+msgstr ""
+
+#: application/settings.py:81
+msgid "Sell"
+msgstr ""
+
+#: application/settings.py:82
+msgid "Buy"
+msgstr ""
+
+#: application/apps/accounts/admin.py:17
+msgid "Avatar"
+msgstr ""
+
+#: application/apps/accounts/admin.py:25
+#: application/apps/accounts/models.py:51
+msgid "Business profile"
+msgstr ""
+
+#: application/apps/accounts/admin.py:60
+msgid "Contact person"
+msgstr ""
+
+#: application/apps/accounts/forms.py:27
+#: application/apps/accounts/templates/accounts/account_detail.html:9
+msgid "First name"
+msgstr ""
+
+#: application/apps/accounts/forms.py:28
+#: application/apps/accounts/templates/accounts/account_detail.html:13
+msgid "Last name"
+msgstr ""
+
+#: application/apps/accounts/forms.py:30
+#: application/apps/accounts/forms.py:222
+#: application/apps/accounts/templates/accounts/account_detail.html:21
+#: application/apps/deals/templates/deals/deal_list.html:15
+#: application/templates/base.html:259
+msgid "Email"
+msgstr ""
+
+#: application/apps/accounts/forms.py:31
+msgid "Confirm email"
+msgstr ""
+
+#: application/apps/accounts/forms.py:33
+#: application/apps/accounts/models.py:24
+#: application/apps/accounts/templates/accounts/account_detail.html:29
+#: application/apps/deals/templates/deals/deal_list.html:13
+msgid "Business name"
+msgstr ""
+
+#: application/apps/accounts/forms.py:34
+#: application/apps/accounts/models.py:32
+#: application/apps/accounts/templates/accounts/account_detail.html:33
+msgid "Country"
+msgstr ""
+
+#: application/apps/accounts/forms.py:35
+#: application/apps/accounts/models.py:33
+#: application/apps/accounts/templates/accounts/account_detail.html:37
+#: application/apps/deals/templates/deals/deal_list.html:14
+msgid "Address"
+msgstr ""
+
+#: application/apps/accounts/forms.py:36
+#: application/apps/accounts/templates/accounts/account_detail.html:41
+msgid "Zipcode"
+msgstr ""
+
+#: application/apps/accounts/forms.py:37
+#: application/apps/accounts/models.py:35
+#: application/apps/accounts/templates/accounts/account_detail.html:45
+msgid "City"
+msgstr ""
+
+#: application/apps/accounts/forms.py:39
+msgid "Sign me up for Bidpart newsletter"
+msgstr ""
+
+#: application/apps/accounts/forms.py:53
+msgid "The entered email already exists"
+msgstr ""
+
+#: application/apps/accounts/forms.py:63
+msgid "Both email fields must match."
+msgstr ""
+
+#: application/apps/accounts/forms.py:130
+msgid "Password (min 6)"
+msgstr ""
+
+#: application/apps/accounts/forms.py:131
+msgid "Yes, I approve of the"
+msgstr ""
+
+#: application/apps/accounts/forms.py:170
+#: application/apps/accounts/forms.py:172
+msgid "Invalid email or password"
+msgstr ""
+
+#: application/apps/accounts/forms.py:186
+#: application/apps/accounts/templates/accounts/agent_index.html:52
+#: application/apps/ads/templates/ads/ad_header_search.html:10
+msgid "Search"
+msgstr ""
+
+#: application/apps/accounts/forms.py:190
+msgid "All states"
+msgstr ""
+
+#: application/apps/accounts/forms.py:216
+msgid "Recruit somone?"
+msgstr ""
+
+#: application/apps/accounts/forms.py:246
+msgid "You need to select one or more choices."
+msgstr ""
+
+#: application/apps/accounts/models.py:22
+#: application/apps/accounts/templates/accounts/sidebar.html:20
+#: application/apps/accounts/templates/accounts/sidebar.html:35
+#: application/apps/ads/models.py:87 application/apps/blog/models.py:45
+#: application/apps/deals/models.py:30
+msgid "Active"
+msgstr ""
+
+#: application/apps/accounts/models.py:23 application/apps/ads/models.py:88
+#: application/apps/files/models.py:31
+msgid "Creator"
+msgstr ""
+
+#: application/apps/accounts/models.py:26
+msgid "Business description"
+msgstr ""
+
+#: application/apps/accounts/models.py:27
+msgid "Business agent"
+msgstr ""
+
+#: application/apps/accounts/models.py:28
+msgid "Is Agent"
+msgstr ""
+
+#: application/apps/accounts/models.py:34
+msgid "Zip code"
+msgstr ""
+
+#: application/apps/accounts/models.py:40
+msgid "Commission Override"
+msgstr ""
+
+#: application/apps/accounts/models.py:50
+#: application/apps/accounts/models.py:117
+msgid "Accounts"
+msgstr ""
+
+#: application/apps/accounts/models.py:52
+msgid "Business profiles"
+msgstr ""
+
+#: application/apps/accounts/models.py:62
+msgid "Provision level"
+msgstr ""
+
+#: application/apps/accounts/models.py:64
+#: application/apps/accounts/models.py:72
+msgid "Number of sold ads"
+msgstr ""
+
+#: application/apps/accounts/models.py:65
+msgid "Number of bought ads"
+msgstr ""
+
+#: application/apps/accounts/models.py:66
+msgid "Number of ads"
+msgstr ""
+
+#: application/apps/accounts/models.py:67
+msgid "Total views of all ads"
+msgstr ""
+
+#: application/apps/accounts/models.py:71
+msgid "Number of recruited businesses"
+msgstr ""
+
+#: application/apps/accounts/models.py:73
+msgid "Deals (interested)"
+msgstr ""
+
+#: application/apps/accounts/models.py:74
+msgid "Deals (active)"
+msgstr ""
+
+#: application/apps/accounts/models.py:75
+msgid "Deals (done)"
+msgstr ""
+
+#: application/apps/accounts/models.py:76
+msgid "Deals (canceled)"
+msgstr ""
+
+#: application/apps/accounts/models.py:82
+#: application/apps/logentryadmin/admin.py:65
+msgid "User"
+msgstr ""
+
+#: application/apps/accounts/models.py:83
+msgid "Active profile"
+msgstr ""
+
+#: application/apps/accounts/models.py:86
+#: application/apps/accounts/templates/accounts/account_detail.html:17
+#: application/apps/deals/templates/deals/deal_list.html:16
+msgid "Phone"
+msgstr ""
+
+#: application/apps/accounts/models.py:87
+msgid "Cellphone"
+msgstr ""
+
+#: application/apps/accounts/models.py:91
+msgid "Language code"
+msgstr ""
+
+#: application/apps/accounts/models.py:118
+msgid "User profile"
+msgstr ""
+
+#: application/apps/accounts/models.py:119
+msgid "User profiles"
+msgstr ""
+
+#: application/apps/accounts/views.py:69
+msgid "Your details was saved successfully."
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/account_detail.html:5
+#: application/apps/accounts/templates/accounts/account_form.html:25
+#: application/apps/accounts/templates/accounts/signup_form.html:14
+msgid "Account"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/account_detail.html:26
+#: application/apps/accounts/templates/accounts/account_form.html:61
+#: application/apps/accounts/templates/accounts/signup_form.html:59
+msgid "Company"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/account_form.html:111
+msgid "Update details"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:5
+msgid "Recruited"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:9
+msgid "Completed deals"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:16
+msgid "Signs of interest"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:20
+msgid "Active deals"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:24
+msgid "Canceled deals"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:32
+#: application/apps/accounts/templates/accounts/dashboard.html:21
+msgid "Commission level"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:32
+#: application/apps/accounts/templates/accounts/dashboard.html:21
+msgid "Explaination?"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_dashboard.html:40
+msgid "to"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:35
+msgid "Send invite"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:45
+#: application/apps/accounts/templates/accounts/index.html:49
+msgid "Dashboard"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:60
+#: application/apps/ads/models.py:128 application/apps/ads/models.py:281
+#: application/apps/ads/models.py:290 application/apps/deals/admin.py:35
+#: application/apps/deals/models.py:37
+msgid "Ad"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:61
+msgid "Status"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:62
+#: application/apps/deals/models.py:39
+#: application/apps/deals/templates/deals/deal_list.html:10
+#: application/apps/deals/templates/deals/deal_list.html:45
+msgid "Bid"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:63
+msgid "End-price (EUR)"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:64
+msgid "Your profit (EUR)"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:65
+#: application/apps/invoice/models.py:150
+#: application/apps/invoice/models.py:151
+#: application/apps/invoice/models.py:165
+#: application/apps/invoice/models.py:198
+msgid "Invoice"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:86
+msgid "Already billed"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/agent_index.html:89
+msgid "Download invoice base"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/dashboard.html:5
+msgid "Views"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/dashboard.html:9
+msgid "Active ads"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/dashboard.html:13
+msgid "Sold products"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/login_form.html:9
+#: application/apps/accounts/templates/accounts/login_form.html:41
+#: application/templates/base.html:312
+#: application/templates/admin/login.html:65
+msgid "Login"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/login_form.html:29
+msgid "Forgot your password?"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/login_form.html:48
+msgid "Signup"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/login_form.html:50
+msgid "Don't have an account?"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/login_form.html:51
+msgid "Create an account"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:10
+#: application/templates/registration/password_change_form.html:45
+#: application/templates/registration/password_reset_confirm.html:37
+msgid "Change password"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:12
+#: application/templates/base.html:211
+msgid "Logout"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:18
+msgid "Your ads"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:23
+msgid "Unpublished"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:26
+#: application/apps/accounts/templates/accounts/sidebar.html:41
+#: application/apps/deals/models.py:31
+msgid "Completed"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:33
+msgid "Your bids"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar.html:38
+#: application/apps/deals/models.py:32
+msgid "Canceled"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/sidebar_commission_levels.html:6
+msgid "Sales in 1000s EUR"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/signup_form.html:16
+msgid "Have an account?"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/signup_form.html:17
+msgid "Login here"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/signup_form.html:117
+msgid "Terms & Agreement"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/signup_form.html:123
+msgid "Next step"
+msgstr ""
+
+#: application/apps/accounts/templates/accounts/signup_form.html:125
+msgid "Create"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:19
+msgid "Activated setting!"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:20
+msgid "Activate setting"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:26
+msgid "Deactivated setting!"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:27
+msgid "Deactivate setting"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:31 application/apps/ads/admin.py:75
+#: application/apps/ads/admin.py:103 application/apps/ads/models.py:80
+#: application/apps/ads/models.py:200
+#: application/apps/ads/templates/ads/ad_form.html:29
+msgid "Product type"
+msgstr ""
+
+#: application/apps/adminsettings/admin.py:32 application/apps/ads/admin.py:76
+#: application/apps/ads/models.py:201
+msgid "Product types"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:16
+msgid "String"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:17
+msgid "Integer"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:18
+msgid "Decimal"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:19
+msgid "Boolean"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:76
+#: application/apps/adminsettings/models.py:78
+#: application/apps/adminsettings/models.py:88
+msgid "Admin settings"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:77
+msgid "Admin setting"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:89
+msgid "Admin settings group"
+msgstr ""
+
+#: application/apps/adminsettings/models.py:90
+msgid "Admin settings groups"
+msgstr ""
+
+#: application/apps/ads/admin.py:100
+#: application/apps/ads/templates/ads/ad_form.html:53
+msgid "Product information"
+msgstr ""
+
+#: application/apps/ads/admin.py:106
+msgid "Other"
+msgstr ""
+
+#: application/apps/ads/admin.py:109
+msgid "Information"
+msgstr ""
+
+#: application/apps/ads/forms.py:33 application/apps/ads/forms.py:103
+#: application/apps/ads/forms.py:150
+msgid "Choose here"
+msgstr ""
+
+#: application/apps/ads/forms.py:33 application/apps/ads/models.py:219
+msgid "Product category"
+msgstr ""
+
+#: application/apps/ads/forms.py:37
+msgid "Youtube URL"
+msgstr ""
+
+#: application/apps/ads/forms.py:37 application/apps/ads/models.py:91
+msgid "An url to a youtube-clip"
+msgstr ""
+
+#: application/apps/ads/forms.py:41 application/apps/ads/models.py:81
+#: application/apps/ads/models.py:184
+#: application/apps/ads/templates/ads/ad_detail.html:52
+msgid "Business domains"
+msgstr ""
+
+#: application/apps/ads/forms.py:171
+#, python-format
+msgid "%s can't be comined with other business domains"
+msgstr ""
+
+#: application/apps/ads/forms.py:184 application/apps/ads/forms.py:186
+msgid "We can not find this youtube video."
+msgstr ""
+
+#: application/apps/ads/forms.py:197
+msgid "Please fill out product information for at least one language"
+msgstr ""
+
+#: application/apps/ads/forms.py:322
+msgid "Created ascending"
+msgstr ""
+
+#: application/apps/ads/forms.py:323
+msgid "Created descending"
+msgstr ""
+
+#: application/apps/ads/forms.py:325
+msgid "Title ascending"
+msgstr ""
+
+#: application/apps/ads/forms.py:326
+msgid "Title descending"
+msgstr ""
+
+#: application/apps/ads/forms.py:328
+msgid "Price ascending"
+msgstr ""
+
+#: application/apps/ads/forms.py:329
+msgid "Price descending"
+msgstr ""
+
+#: application/apps/ads/forms.py:331
+msgid "Converted price ascending"
+msgstr ""
+
+#: application/apps/ads/forms.py:332
+msgid "Converted price descending"
+msgstr ""
+
+#: application/apps/ads/forms.py:335
+msgid "Ads on Bidpart"
+msgstr ""
+
+#: application/apps/ads/forms.py:440
+#: application/apps/ads/templatetags/ads_extras.py:25
+msgid "All business domains"
+msgstr ""
+
+#: application/apps/ads/models.py:65 application/apps/blog/models.py:35
+#: application/apps/cms/admin.py:47 application/apps/files/models.py:25
+msgid "Title"
+msgstr ""
+
+#: application/apps/ads/models.py:65
+msgid "The title of your ad"
+msgstr ""
+
+#: application/apps/ads/models.py:67 application/apps/files/models.py:28
+msgid "Description"
+msgstr ""
+
+#: application/apps/ads/models.py:68
+msgid ""
+"A detailed description of your ad. Use English language to reach a wider "
+"audience."
+msgstr ""
+
+#: application/apps/ads/models.py:75
+#: application/apps/ads/templates/ads/ad_form.html:105
+msgid "Price / pcs"
+msgstr ""
+
+#: application/apps/ads/models.py:75
+msgid "Help text for the price"
+msgstr ""
+
+#: application/apps/ads/models.py:76
+msgid "Help text for the currency"
+msgstr ""
+
+#: application/apps/ads/models.py:77 application/apps/deals/models.py:41
+msgid "Amount"
+msgstr ""
+
+#: application/apps/ads/models.py:77
+msgid "The amount of items you are selling."
+msgstr ""
+
+#: application/apps/ads/models.py:78
+msgid "Help text for published"
+msgstr ""
+
+#: application/apps/ads/models.py:80
+msgid "Help text for product type"
+msgstr ""
+
+#: application/apps/ads/models.py:81
+msgid "Help text for business domains"
+msgstr ""
+
+#: application/apps/ads/models.py:83 application/apps/blog/models.py:41
+#: application/apps/cms/models.py:30 application/apps/cms/models.py:51
+#: application/apps/deals/models.py:51
+msgid "Updated"
+msgstr ""
+
+#: application/apps/ads/models.py:83
+msgid "When the ad was last edited"
+msgstr ""
+
+#: application/apps/ads/models.py:84 application/apps/blog/models.py:40
+#: application/apps/cms/models.py:29 application/apps/cms/models.py:50
+#: application/apps/deals/models.py:52
+msgid "Created"
+msgstr ""
+
+#: application/apps/ads/models.py:84
+msgid "When the ad was created"
+msgstr ""
+
+#: application/apps/ads/models.py:85
+msgid "Last Deal updated"
+msgstr ""
+
+#: application/apps/ads/models.py:85
+msgid "When was the last deal updated"
+msgstr ""
+
+#: application/apps/ads/models.py:87
+msgid "Use this instead of deleting the ad"
+msgstr ""
+
+#: application/apps/ads/models.py:88
+msgid "The person who created the ad"
+msgstr ""
+
+#: application/apps/ads/models.py:89
+msgid "Owner"
+msgstr ""
+
+#: application/apps/ads/models.py:89
+msgid "The business who owns the ad"
+msgstr ""
+
+#: application/apps/ads/models.py:91
+msgid "Youtube url"
+msgstr ""
+
+#: application/apps/ads/models.py:93
+#: application/apps/ads/templates/ads/ad_form.html:20
+msgid "Buying"
+msgstr ""
+
+#: application/apps/ads/models.py:93
+msgid "If the ad is wanted"
+msgstr ""
+
+#: application/apps/ads/models.py:95
+msgid "Featured"
+msgstr ""
+
+#: application/apps/ads/models.py:95
+msgid "Featured on the frontpage"
+msgstr ""
+
+#: application/apps/ads/models.py:96
+msgid "Number of views"
+msgstr ""
+
+#: application/apps/ads/models.py:96
+msgid "Total number of views this ad has"
+msgstr ""
+
+#: application/apps/ads/models.py:98
+#: application/apps/ads/templates/ads/ad_form.html:217
+msgid "Your own notes"
+msgstr ""
+
+#: application/apps/ads/models.py:98
+msgid "Your own notes is not visible to anyone else."
+msgstr ""
+
+#: application/apps/ads/models.py:127 application/apps/ads/models.py:129
+#: application/apps/ads/models.py:167 application/apps/ads/models.py:182
+#: application/apps/ads/models.py:199 application/apps/ads/models.py:218
+#: application/apps/ads/models.py:262 application/apps/ads/models.py:275
+#: application/apps/ads/models.py:284 application/apps/ads/models.py:296
+msgid "Ads"
+msgstr ""
+
+#: application/apps/ads/models.py:139 application/apps/ads/models.py:140
+msgid "Used for requests."
+msgstr ""
+
+#: application/apps/ads/models.py:155
+msgid "Yes"
+msgstr ""
+
+#: application/apps/ads/models.py:157
+msgid "No"
+msgstr ""
+
+#: application/apps/ads/models.py:168
+msgid "Ad product field value"
+msgstr ""
+
+#: application/apps/ads/models.py:169
+msgid "Ad product field values"
+msgstr ""
+
+#: application/apps/ads/models.py:177
+msgid "Is Unique"
+msgstr ""
+
+#: application/apps/ads/models.py:177
+msgid ""
+"If this business domain is selected no other business domain can be selected."
+msgstr ""
+
+#: application/apps/ads/models.py:183
+msgid "Business domain"
+msgstr ""
+
+#: application/apps/ads/models.py:220
+msgid "Product categories"
+msgstr ""
+
+#: application/apps/ads/models.py:263
+msgid "Product field"
+msgstr ""
+
+#: application/apps/ads/models.py:264
+msgid "Product fields"
+msgstr ""
+
+#: application/apps/ads/models.py:276
+msgid "Product field choice"
+msgstr ""
+
+#: application/apps/ads/models.py:277
+msgid "Product field choices"
+msgstr ""
+
+#: application/apps/ads/models.py:285
+msgid "Ad image"
+msgstr ""
+
+#: application/apps/ads/models.py:286
+msgid "Ad images"
+msgstr ""
+
+#: application/apps/ads/models.py:297
+msgid "Ad file"
+msgstr ""
+
+#: application/apps/ads/models.py:298
+msgid "Ad files"
+msgstr ""
+
+#: application/apps/ads/views.py:197
+msgid "Permission denied"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_deals.html:4
+msgid "interests"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_deals.html:5
+msgid "deals"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_deals.html:6
+msgid "completed"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_deals.html:9
+#: application/apps/deals/models.py:38
+#: application/apps/deals/templates/deals/deal_list.html:42
+msgid "State"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_deals.html:10
+msgid "Your bid"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:41
+#: application/apps/blog/templates/blog/blog_entry.html:27
+msgid "Published"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:41
+msgid "Share on"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:63
+#: application/apps/ads/templates/ads/ad_list_table.html:20
+#: application/apps/ads/templates/ads/ad_list_table.html:24
+#: application/apps/ads/templates/ads/ad_list_table.html:42
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:24
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:23
+msgid "Quantity"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:67
+msgid "Todays rates"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:76
+#: application/apps/deals/templates/deals/deal_list.html:80
+msgid "pcs"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:87
+msgid "Deals"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:88
+#: application/apps/ads/templates/ads/ad_detail.html:90
+msgid "Specification"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:93
+#: application/apps/files/models.py:67 application/apps/files/models.py:69
+#: application/apps/files/models.py:77 application/apps/files/models.py:197
+msgid "Files"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:96
+msgid "More ads"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:101
+msgid "Login to sign of interest"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:103
+#: application/apps/ads/templates/ads/ad_detail.html:105
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:7
+msgid "Sign of interest"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:105
+msgid "You have already signed of interest on this ad."
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_detail.html:109
+msgid "Update ad"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:9
+msgid "There are errors, please review the form and submit again."
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:14
+msgid "Ad type"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:19
+msgid "Selling"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:30
+msgid "required"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:106
+msgid "Max price / pcs"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:113
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:41
+msgid "Bidpart commission"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:114
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:42
+msgid ""
+"Bidpart commisson is based on the final price of every single deal alone. "
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:120
+msgid "Advertise without price"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:129
+msgid "Pcs"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:149
+#: application/apps/files/models.py:199
+msgid "Images"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:164
+msgid "Upload image"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:176
+msgid "Files & documentation"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:191
+msgid "Upload file"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:203
+msgid "Youtube"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:231
+#: application/apps/ads/templates/ads/ad_form.html:241
+#: application/apps/ads/templates/ads/ad_form.html:250
+msgid "Delete"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:232
+msgid "Save Ad"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:245
+msgid "Are you sure you want to delete this ad?"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form.html:249
+#: application/apps/deals/forms.py:63
+msgid "Cancel"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form_product_type_fields.html:2
+msgid "Product specification"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_form_product_type_fields.html:29
+msgid "Please choose a product type"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_header_search.html:4
+msgid "Search for"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_header_search.html:8
+msgid "in"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list.html:54
+msgid "Featured ads"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list.html:55
+msgid "Latest ads"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list.html:58
+msgid "See more of the latest ads"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_sidebar.html:3
+msgid "Filter ads"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_sidebar.html:10
+msgid "Back"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_table.html:23
+#: application/apps/ads/templates/ads/ad_list_table.html:41
+msgid "Date added"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_table.html:25
+#: application/apps/ads/templates/ads/ad_list_table.html:43
+#: application/apps/deals/models.py:40
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:28
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:30
+msgid "Price"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_table.html:39
+msgid "Product name"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_table.html:57
+msgid "BUYING"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_list_table.html:70
+#: application/apps/deals/templates/deals/deal_list.html:75
+msgid "ago"
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_success_delete.html:5
+msgid "Your ad has been successfully deleted."
+msgstr ""
+
+#: application/apps/ads/templates/ads/ad_success_delete.html:7
+msgid "Continue"
+msgstr ""
+
+#: application/apps/ads/templates/ads/pagination.html:8
+#: application/apps/ads/templates/ads/pagination.html:11
+msgid "Prev"
+msgstr ""
+
+#: application/apps/ads/templates/ads/pagination.html:9
+#: application/apps/ads/templates/ads/pagination.html:12
+msgid "First"
+msgstr ""
+
+#: application/apps/ads/templates/ads/pagination.html:36
+#: application/apps/ads/templates/ads/pagination.html:39
+msgid "Last"
+msgstr ""
+
+#: application/apps/ads/templates/ads/pagination.html:37
+#: application/apps/ads/templates/ads/pagination.html:40
+msgid "Next"
+msgstr ""
+
+#: application/apps/ads/templatetags/ads_extras.py:25
+msgid "All product categories"
+msgstr ""
+
+#: application/apps/ads/templatetags/ads_extras.py:26
+msgid "All product types"
+msgstr ""
+
+#: application/apps/ads/templatetags/ads_extras.py:90
+#, python-format
+msgid "Actual price: %(amount)s %(currency)s"
+msgstr ""
+
+#: application/apps/ads/templatetags/ads_extras.py:99
+msgid "Offer desired"
+msgstr ""
+
+#: application/apps/ads/templatetags/ads_extras.py:100
+msgid "No price is set, please leve an offer."
+msgstr ""
+
+#: application/apps/blog/admin.py:34 application/apps/blog/models.py:42
+msgid "Publish"
+msgstr ""
+
+#: application/apps/blog/models.py:36 application/apps/files/models.py:26
+msgid "Title slug"
+msgstr ""
+
+#: application/apps/blog/models.py:37
+msgid "Text teaser"
+msgstr ""
+
+#: application/apps/blog/models.py:38
+msgid "Text body"
+msgstr ""
+
+#: application/apps/blog/models.py:43
+msgid "Unpublish"
+msgstr ""
+
+#: application/apps/blog/models.py:71 application/apps/blog/models.py:84
+#: application/apps/blog/templates/blog/blog_detail.html:4
+#: application/apps/blog/templates/blog/blog_list.html:4
+#: application/templates/base.html:301
+msgid "Blog"
+msgstr ""
+
+#: application/apps/blog/models.py:72
+msgid "Blog entry"
+msgstr ""
+
+#: application/apps/blog/models.py:73
+msgid "Blog entries"
+msgstr ""
+
+#: application/apps/blog/models.py:78 application/apps/cms/models.py:25
+#: application/apps/files/admin.py:38 application/apps/files/admin.py:44
+#: application/apps/files/models.py:198
+msgid "Image"
+msgstr ""
+
+#: application/apps/blog/models.py:85
+msgid "Blog entry image"
+msgstr ""
+
+#: application/apps/blog/models.py:86
+msgid "Blog entry images"
+msgstr ""
+
+#: application/apps/blog/templates/blog/blog_list.html:11
+msgid "No blog entries found."
+msgstr ""
+
+#: application/apps/cms/admin.py:20
+msgid "Thumbnail"
+msgstr ""
+
+#: application/apps/cms/admin.py:50
+msgid "Body"
+msgstr ""
+
+#: application/apps/cms/admin.py:87 application/apps/cms/models.py:78
+msgid "Subject"
+msgstr ""
+
+#: application/apps/cms/admin.py:90
+msgid "HTML"
+msgstr ""
+
+#: application/apps/cms/admin.py:93
+msgid "Plain text"
+msgstr ""
+
+#: application/apps/cms/models.py:27
+msgid "Active on site"
+msgstr ""
+
+#: application/apps/cms/models.py:28 application/apps/cms/models.py:47
+msgid "Internal title"
+msgstr ""
+
+#: application/apps/cms/models.py:33
+msgid "Slider page"
+msgstr ""
+
+#: application/apps/cms/models.py:34
+msgid "Slider pages"
+msgstr ""
+
+#: application/apps/cms/models.py:48
+msgid "URL slug"
+msgstr ""
+
+#: application/apps/cms/models.py:53
+msgid "Show in top menu"
+msgstr ""
+
+#: application/apps/cms/models.py:69
+msgid "Page"
+msgstr ""
+
+#: application/apps/cms/models.py:70
+msgid "Pages"
+msgstr ""
+
+#: application/apps/cms/models.py:79
+msgid "HTML Template"
+msgstr ""
+
+#: application/apps/cms/models.py:80
+msgid "Text Template"
+msgstr ""
+
+#: application/apps/cms/models.py:89
+msgid "Email template"
+msgstr ""
+
+#: application/apps/cms/models.py:90
+msgid "Email templates"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:9
+#: application/apps/contact/templates/contact/contact_thanks.html:9
+#: application/templates/base.html:299
+msgid "Contact us"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:22
+msgid "Subject:"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:26
+msgid "Message:"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:30
+msgid "Your name:"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:34
+msgid "Your e-mail address:"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:38
+msgid "Send me a copy of the support ticket."
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:42
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:39
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:56
+msgid "Send"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:54
+msgid "Tel"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_form.html:55
+msgid "Fax"
+msgstr ""
+
+#: application/apps/contact/templates/contact/contact_thanks.html:14
+msgid "Thanks for contacting us. We will get back to you shortly."
+msgstr ""
+
+#: application/apps/deals/admin.py:45
+msgid "Buyer"
+msgstr ""
+
+#: application/apps/deals/admin.py:54
+msgid "Seller"
+msgstr ""
+
+#: application/apps/deals/forms.py:61
+msgid "Activate"
+msgstr ""
+
+#: application/apps/deals/forms.py:62
+msgid "Extend"
+msgstr ""
+
+#: application/apps/deals/forms.py:64
+msgid "Complete"
+msgstr ""
+
+#: application/apps/deals/models.py:29
+msgid "Interested"
+msgstr ""
+
+#: application/apps/deals/models.py:39
+msgid "Optional bid"
+msgstr ""
+
+#: application/apps/deals/models.py:40
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:26
+msgid "End price"
+msgstr ""
+
+#: application/apps/deals/models.py:41
+msgid "The number of items"
+msgstr ""
+
+#: application/apps/deals/models.py:42
+msgid "End price (Converted to EUR)"
+msgstr ""
+
+#: application/apps/deals/models.py:42
+msgid "Price converted to EUR"
+msgstr ""
+
+#: application/apps/deals/models.py:43
+msgid "Commission"
+msgstr ""
+
+#: application/apps/deals/models.py:44
+msgid "Agent Commission"
+msgstr ""
+
+#: application/apps/deals/models.py:44
+msgid "Agent comission"
+msgstr ""
+
+#: application/apps/deals/models.py:45
+msgid "Last reminder"
+msgstr ""
+
+#: application/apps/deals/models.py:46
+msgid "Manual processing"
+msgstr ""
+
+#: application/apps/deals/models.py:47
+msgid "Payed to agent"
+msgstr ""
+
+#: application/apps/deals/models.py:48
+#: application/apps/deals/templates/deals/deal_list.html:18
+msgid "Cancel reason"
+msgstr ""
+
+#: application/apps/deals/models.py:49
+msgid "The invoice this deal has auto-created"
+msgstr ""
+
+#: application/apps/deals/models.py:49
+msgid "If this deal auto-created a invoice, it will be referenced here"
+msgstr ""
+
+#: application/apps/deals/models.py:50
+msgid "Renewed"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:6
+msgid "Activate deal for ad"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:10
+msgid "The deal is now activated."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:14
+msgid ""
+"By activating this deal you'll be granted access to the other partys contact "
+"information."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_activate_deal_modal.html:38
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:35
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:45
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:55
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:57
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:28
+msgid "Close"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:6
+msgid "Cancel deal for ad"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:10
+msgid "The deal is now canceled."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:14
+msgid ""
+"To get the statistics, we wish that you give the reason for you to cancel "
+"the deal. This information is for internal use only and will not be shown to "
+"the other party."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:17
+msgid ""
+"In order to offer other equipment we will contact the other party when a "
+"deal is cancelled."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:22
+msgid "Reason for canceling"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_cancel_deal_modal.html:36
+#: application/apps/deals/templates/deals/deal_list.html:31
+msgid "Cancel deal"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:6
+msgid "Complete deal for ad"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:10
+msgid "The deal is now completed."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:14
+msgid ""
+"Please complete the deal by entering the total price for the quantity that "
+"have been sold."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:19
+msgid "End quantity"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_complete_deal_modal.html:46
+msgid "Complete deal"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:11
+msgid "Your sign of interest is now sent."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:15
+msgid ""
+"With your consent, your contact information will be sent to the owner of the "
+"equipment. When the owner is aware of your contact information he can "
+"contact you regarding your inquiry."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_create_deal_modal.html:48
+msgid "Place your own bid"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:7
+msgid "Extend deal for ad"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:11
+msgid "The deal is now extended."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:15
+msgid ""
+"We send inactivity notifications to make sure all deals get the attention "
+"needed. By extending this deal we know you're allready working on it and "
+"wont send those reminders."
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_extend_deal_modal.html:29
+msgid "Extend deal"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:11
+#: application/apps/deals/templates/deals/deal_list.html:70
+msgid "Begin negotiations to see contact information"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:25
+msgid "Extend negotiation time"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:27
+msgid "Begin negotiations"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:34
+msgid "Deal complete"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:43
+msgid "Customer"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:44
+msgid "Date"
+msgstr ""
+
+#: application/apps/deals/templates/deals/deal_list.html:84
+#: application/templates/base.html:181
+msgid "Show"
+msgstr ""
+
+#: application/apps/faq/models.py:9
+msgid "Name"
+msgstr ""
+
+#: application/apps/faq/models.py:17
+msgid "FAQ group"
+msgstr ""
+
+#: application/apps/faq/models.py:18
+msgid "FAQ groups"
+msgstr ""
+
+#: application/apps/faq/models.py:25
+msgid "Groups"
+msgstr ""
+
+#: application/apps/faq/models.py:26
+msgid "Question"
+msgstr ""
+
+#: application/apps/faq/models.py:27
+msgid "Answer"
+msgstr ""
+
+#: application/apps/faq/models.py:28
+msgid "Only allow logged in users to view this question"
+msgstr ""
+
+#: application/apps/faq/models.py:32
+msgid "FAQ question"
+msgstr ""
+
+#: application/apps/faq/models.py:33
+msgid "FAQ questions"
+msgstr ""
+
+#: application/apps/faq/templates/faq/index.html:7
+#: application/templates/base.html:300
+msgid "FAQ"
+msgstr ""
+
+#: application/apps/faq/templates/faq/index.html:12
+msgid "Questions"
+msgstr ""
+
+#: application/apps/faq/templates/faq/index.html:39
+msgid "Answers"
+msgstr ""
+
+#: application/apps/files/admin.py:15 application/apps/files/admin.py:32
+msgid "Filesize"
+msgstr ""
+
+#: application/apps/files/models.py:27
+msgid "Short description"
+msgstr ""
+
+#: application/apps/files/models.py:29
+msgid "Unique identifier"
+msgstr ""
+
+#: application/apps/files/models.py:30
+msgid "File size"
+msgstr ""
+
+#: application/apps/files/models.py:51 application/apps/files/models.py:68
+msgid "File"
+msgstr ""
+
+#: application/apps/files/models.py:74
+msgid "File key"
+msgstr ""
+
+#: application/apps/files/models.py:78
+msgid "Site file"
+msgstr ""
+
+#: application/apps/files/models.py:79
+msgid "Site files"
+msgstr ""
+
+#: application/apps/files/models.py:88
+msgid "Image file"
+msgstr ""
+
+#: application/apps/files/models.py:90
+msgid "Width"
+msgstr ""
+
+#: application/apps/files/models.py:90
+msgid "The width in pixels."
+msgstr ""
+
+#: application/apps/files/models.py:91
+msgid "Height"
+msgstr ""
+
+#: application/apps/files/models.py:91
+msgid "The height in pixels."
+msgstr ""
+
+#: application/apps/invoice/admin.py:28
+msgid "PDF-file"
+msgstr ""
+
+#: application/apps/invoice/admin.py:30
+msgid "Invoice is not generated to disk."
+msgstr ""
+
+#: application/apps/invoice/models.py:55
+msgid "Invoice title"
+msgstr ""
+
+#: application/apps/invoice/models.py:55
+msgid "Commission Invoice"
+msgstr ""
+
+#: application/apps/invoice/models.py:62
+msgid "Terms days net"
+msgstr ""
+
+#: application/apps/invoice/models.py:63
+msgid "Is basis for invoice"
+msgstr ""
+
+#: application/apps/invoice/models.py:64
+msgid "Is the pdf written to disk"
+msgstr ""
+
+#: application/apps/invoice/models.py:95
+msgid "Invoice basis"
+msgstr ""
+
+#: application/apps/invoice/models.py:152
+msgid "Invoices"
+msgstr ""
+
+#: application/apps/invoice/models.py:166
+msgid "Invoice row"
+msgstr ""
+
+#: application/apps/invoice/models.py:167
+msgid "Invoice rows"
+msgstr ""
+
+#: application/apps/invoice/models.py:199
+msgid "Invoice log entry"
+msgstr ""
+
+#: application/apps/invoice/models.py:200
+msgid "Invoices log entries"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:17
+msgid "Invoice number"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:21
+msgid "Invoice date"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:25
+msgid "Not yet sent."
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:33
+msgid "Invoice address"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:45
+msgid "Your reference"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:53
+msgid "Our reference"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:58
+msgid "Payment terms"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:59
+msgid "10 days net"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:62
+msgid "Expiration date"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:67
+msgid "Not sent yet"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:72
+msgid "Penalty interest rate"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:107
+msgid "Subtotal"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:108
+msgid "Tax rate"
+msgstr ""
+
+#: application/apps/invoice/templates/invoice/invoice.html:110
+msgid "Total"
+msgstr ""
+
+#: application/apps/logentryadmin/admin.py:46
+msgid "Added"
+msgstr ""
+
+#: application/apps/logentryadmin/admin.py:48
+msgid "Changed"
+msgstr ""
+
+#: application/apps/logentryadmin/admin.py:50
+msgid "Deleted"
+msgstr ""
+
+#: application/apps/logentryadmin/admin.py:52
+msgid "Action"
+msgstr ""
+
+#: application/templates/404.html:16
+msgid "Oops, this link doesn't go anyware."
+msgstr ""
+
+#: application/templates/500.html:31
+msgid "Oops, something went very wrong."
+msgstr ""
+
+#: application/templates/500.html:33
+msgid "Our developers has just got an email about the error."
+msgstr ""
+
+#: application/templates/base.html:148 application/templates/base.html:307
+msgid "Language"
+msgstr ""
+
+#: application/templates/base.html:165 application/templates/base.html:308
+msgid "Currency"
+msgstr ""
+
+#: application/templates/base.html:203 application/templates/base.html:310
+msgid "My Account"
+msgstr ""
+
+#: application/templates/base.html:208
+msgid "Agent Dashboard"
+msgstr ""
+
+#: application/templates/base.html:210
+msgid "My Details"
+msgstr ""
+
+#: application/templates/base.html:218
+msgid "Login / Signup"
+msgstr ""
+
+#: application/templates/base.html:249
+msgid "Place new ad"
+msgstr ""
+
+#: application/templates/base.html:257
+msgid "Free support"
+msgstr ""
+
+#: application/templates/base.html:258
+msgid "Call"
+msgstr ""
+
+#: application/templates/base.html:280 application/templates/base.html:298
+msgid "Bidpart on Facebook"
+msgstr ""
+
+#: application/templates/base.html:286
+msgid "About the site"
+msgstr ""
+
+#: application/templates/base.html:290
+msgid "Report error"
+msgstr ""
+
+#: application/templates/base.html:291
+msgid "Terms and Conditions"
+msgstr ""
+
+#: application/templates/admin/login.html:31
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: application/templates/admin/login.html:44
+msgid "E-mail:"
+msgstr ""
+
+#: application/templates/admin/login.html:53
+msgid "Password:"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:9
+msgid "Open All Items"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:10
+msgid "Close All Items"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:11
+#: application/templates/admin/edit_inline/stacked.html:64
+#: application/templates/admin/edit_inline/tabular.html:100
+msgid "Add Item"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:24
+#: application/templates/admin/edit_inline/tabular.html:64
+msgid "View on Site"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:26
+#: application/templates/admin/edit_inline/tabular.html:66
+msgid "Move Item"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:30
+#: application/templates/admin/edit_inline/stacked.html:35
+#: application/templates/admin/edit_inline/tabular.html:70
+#: application/templates/admin/edit_inline/tabular.html:75
+msgid "Delete Item"
+msgstr ""
+
+#: application/templates/admin/edit_inline/stacked.html:62
+#: application/templates/admin/edit_inline/tabular.html:98
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: application/templates/admin/edit_inline/tabular.html:9
+msgid "Add Another"
+msgstr ""
+
+#: application/templates/registration/password_change_done.html:5
+#: application/templates/registration/password_change_done.html:9
+msgid "Password change successful"
+msgstr ""
+
+#: application/templates/registration/password_change_done.html:12
+msgid "Your password was changed"
+msgstr ""
+
+#: application/templates/registration/password_change_done.html:13
+msgid "continue"
+msgstr ""
+
+#: application/templates/registration/password_change_form.html:6
+#: application/templates/registration/password_change_form.html:10
+msgid "Password change"
+msgstr ""
+
+#: application/templates/registration/password_change_form.html:49
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: application/templates/registration/password_reset_complete.html:5
+#: application/templates/registration/password_reset_complete.html:9
+msgid "Password reset complete"
+msgstr ""
+
+#: application/templates/registration/password_reset_complete.html:12
+msgid " "
+msgstr ""
+
+#: application/templates/registration/password_reset_complete.html:14
+msgid "Your password has been set. You may go ahead and"
+msgstr ""
+
+#: application/templates/registration/password_reset_complete.html:15
+msgid "login now"
+msgstr ""
+
+#: application/templates/registration/password_reset_confirm.html:5
+#: application/templates/registration/password_reset_confirm.html:10
+msgid "Enter new password"
+msgstr ""
+
+#: application/templates/registration/password_reset_confirm.html:41
+msgid ""
+"Enter your new password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: application/templates/registration/password_reset_confirm.html:46
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: application/templates/registration/password_reset_confirm.html:48
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: application/templates/registration/password_reset_done.html:5
+#: application/templates/registration/password_reset_done.html:8
+msgid "Password reset successful"
+msgstr ""
+
+#: application/templates/registration/password_reset_done.html:10
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly."
+msgstr ""
+
+#: application/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+
+#: application/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: application/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: application/templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: application/templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: application/templates/registration/password_reset_form.html:5
+#: application/templates/registration/password_reset_form.html:8
+msgid "Password reset"
+msgstr ""
+
+#: application/templates/registration/password_reset_form.html:27
+msgid "Reset password"
+msgstr ""
+
+#: application/templates/registration/password_reset_form.html:31
+msgid ""
+"Forgotten your password? Enter your e-mail address here, and we'll e-mail "
+"instructions for setting a new one."
+msgstr ""

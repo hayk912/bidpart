@@ -1,0 +1,43 @@
+{% load i18n %}
+<div class="well dashboard big">
+    <div class="row">
+        <div class="span3">
+            {% trans 'Recruited' %}
+            <div>{{ num_recruited }}</div>
+        </div>
+        <div class="span3">
+            {% trans 'Completed deals' %}
+            <div>{{ num_completed }}</div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+		<div class="span3">
+			{% trans 'Signs of interest' %}
+			<div>{{ num_interested }}</div>
+		</div>
+		<div class="span3">
+			{% trans 'Active deals' %}
+			<div>{{ num_active }}</div>
+		</div>
+		<div class="span3">
+			{% trans 'Canceled deals' %}
+			<div>{{ num_canceled }}</div>
+		</div>
+    </div>
+</div>
+<div class="well dashboard meter">
+    <div class="row">
+        <div class="span3">
+            <h3>{% trans 'Commission level' %} {{ current_commission_level.perc }}%</h3><span>{% trans 'Explaination?' %}</span>
+        </div>
+        <div class="span4">
+            <div class="progress">
+                <div class="bar bar-success" style="width: {{ current_commission_level.progress }}%;"></div>
+            </div>
+        </div>
+        <div class="span2">
+            {{ current_commission_level.amount_left }} {% trans 'to' %} <strong>{{ next_commission_level.perc }}%</strong>
+        </div>
+    </div>
+</div>

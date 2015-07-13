@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="alert alert-success">
+        {% trans 'Your ad has been successfully deleted.' %}
+    </div>
+    <a class="btn" href="/">{% trans 'Continue' %}</a>
+{% endblock %}

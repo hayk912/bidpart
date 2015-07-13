@@ -1,0 +1,18 @@
+{% load i18n %}
+<div class="commission-levels well">
+    <h3>Provisionsnivåer</h3>
+    <div class="row header">
+        <div class="span1">%</div>
+        <div class="span2">{% trans 'Sales in 1000s EUR' %}</div>
+    </div>
+    {% for lvl in commission_levels %}
+        <div class="row{% if current_level == lvl.level %} active{% endif %}">
+            <div class="span1">{{ lvl.percent }} %</div>
+            <div class="span1">{{ lvl.min }}</div>
+            <div class="span1">{{ lvl.max }}</div>
+        </div>
+    {% endfor %}
+
+</div>
+
+{{ level }}

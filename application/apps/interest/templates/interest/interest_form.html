@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load i18n cms_extras static %}
+
+{% block create_ad_button %}{% endblock create_ad_button %}
+
+{% block sidebar_middle %}
+    <div class="row sidebar-list well">
+        <ul>
+            <li class="back-item">
+                <a href="/" class="btn btn-block back">{% trans 'To the frontpage' %}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="interest">
+        <div class="row well box">
+            <h3>Våra erbjudanden</h3>
+            <h4>0kr i annonskostnad</h4>
+            <ul>
+                <li>Betala bara när din utrustning säljs</li>
+                <li>Annonsera på Bidpart och sköt försäljningen själv</li>
+            </ul>
+            <h4>Fullservice, våra experter hjälper dig med allt:</h4>
+            <ul>
+                <li>Värdering &amp; renovering</li>
+                <li>Hela försäljningsprocessen</li>
+                <li>Du får bra betalt utan problem!</li>
+            </ul>
+        </div>
+
+        <div class="row well box align-center garanti">
+            <img src="{% static 'interest/img/garanti.png' %}" alt="Bidpart Garanti" />
+            <p>Bidpart AB garanterar att minst <strong>50%</strong> av våra annons- intäkter reinvesteras i att driva trafik till sajten!</p>
+        </div>
+    </div>
+{% endblock sidebar_middle %}
+
+{% block content %}
+    <div class="row">
+        <div class="span9">
+            {% frontpage_slider %}
+            <h2 class="orange">Välkommen till nordens ledande marknadsplats för överskottsutrustning</h2>
+            <p style="margin-bottom:40px;">Skicka in en intresseanmälan nedan så kommer vi att kontakta dig inom kort, svara på dina frågor och hitta rätt lösning för dina behov.  Från en enkel annons till en fullservicelösning. Sätt in en annons direkt och betala när utrustningen säljs. Vi tar 10% rak provision på försäljningspriset.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span5">
+            <div class="page-header">
+                <h1>{% trans 'Sign of interest' %}</h1>
+            </div>
+
+            {% block interest_form %}
+            <form action="{{ request.get_full_path }}" method="post">
+                {% csrf_token %}
+                {{ form }}
+
+                <input type="submit" class="btn btn-primary btn-large btn-block btn-important" style="margin-top:20px" value="{% trans "Contact me" %}" />
+            </form>
+            {% endblock interest_form %}
+        </div>
+        <div class="span4">
+            <div class="page-header">
+                <h2>{% trans 'Place new ad' %}</h2>
+            </div>
+
+            <p><strong>{% trans "As easy as one, two, three:" %}</strong></p>
+            <p><span class="badge badge-info badge-round">1</span> {% trans 'Create an account' %}</p>
+            <p><span class="badge badge-info badge-round">2</span> {% trans 'Publish your ad' %}</p>
+            <p><span class="badge badge-info badge-round">3</span> {% trans 'Profit!' %}</p>
+
+            <a class="btn btn-primary btn-large btn-block btn-important btn-icon" style="margin-top:20px" href="{% url ads:ad_create %}">{% trans 'Create account' %}<span data-icon=""></span></a>
+        </div>
+    </div>
+{% endblock content %}

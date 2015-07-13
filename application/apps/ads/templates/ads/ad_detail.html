@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load i18n static ads_extras files_extras locale_extras %}
+
+{% block modals %}
+	{{ block.super }}
+	{% if create_deal_form %}
+		{% include "deals/deal_create_deal_modal.html" with ad=ad %}
+	{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+    {% ad_filter_sidebar form=filter_form %}
+{% endblock %}
+{% block content %}
+    <div class="row ad-detail">
+		<div class="span9">
+        	<div class="row">
+                <div class="span4 images">
+                	{% if ad.images.count %}
+                        <div id="ad-detail-image-slider" class="royalSlider rsDefault" ng-cloak>
+                            {% for image in ad.images.all %}
+                                <img class="rsImg" src="{% get_thumb image 'ad_thumb' %}" data-rsBigImg="{{ image.get_url }}" alt="image description" />
+                            {% endfor %}
+                        	{% if ad.youtube_code %}
+                                <a class="rsImg" href="{% get_thumb None 'ad_thumb' %}" data-rsVideo="http://www.youtube.com/watch?v={{ ad.youtube_code }}">&nbsp;</a>
+                        	{% endif %}
+                        </div>
+                    {% else %}
+                        {% if ad.youtube_code %}
+                            <iframe src="http://www.youtube.com/embed/{{ ad.youtube_code }}?rel=1&amp;autoplay=0&amp;showinfo=0" width="300" height="185" frameborder="no"></iframe>
+                        {% else %}
+                            <img src="{% get_thumb None 'ad_thumb' %}" alt="" width="300" height="185">
+                        {% endif %}
+                	{% endif %}
+                </div>
+                <div class="span5 info">
+                    <div class="row ad-info">
+                        <div class="span5">
+                            <p>
+                                <span class="product-type">{% get_localized ad.product_type 'title' %} -</span>
+                                <span class="info-title">{% trans 'Published' %} {{ ad.created|date:'j F' }} - {% trans 'Share on' %} <!-- AddThis Button BEGIN -->
+									<span class="addthis_toolbox addthis_default_style ">
+											<a class="addthis_button_facebook"></a>
+											<a class="addthis_button_twitter"></a>
+									</span>
+									<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50d1d2aa17254b9f"></script>
+									<!-- AddThis Button END -->
+                                </span>
+                            </p>
+                            <h2 class="title">{% get_localized ad 'title' %}</h2>
+                            <p class="business-domains">
+                                <span class="info-title">{{ ad.business_domains.count }} {% trans 'Business domains' %}:</span>
+                                {% for bd in ad.business_domains.all %}
+                                    {% get_localized bd 'title' %}{% if not forloop.last %},{% endif %}
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                	<div class="price-info well well-small">
+                    	<div class="row-fluid">
+							<div class="span4">
+								<p class="label amount-label">
+									{% trans 'Quantity' %} <span class="amount">{{ ad.amount }}</span>
+								</p>
+                                {% if ad.currency.code != CURRENCY.code %}
+                                    <p class="rates-label">
+                                        <a href="#">{% trans 'Todays rates' %} *</a>
+                                    </p>
+                                {% endif %}
+							</div>
+							<div class="span8">
+                                <p class="total-price">
+									{% price ad.total_price ad.currency '' %}
+                                </p>
+                                <p class="price">
+									{% price ad.price ad.currency %} / {% trans 'pcs' %}
+								</p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                	{% if deals %}
+                        <li class="active"><a href="#deals" data-toggle="tab">{% trans 'Deals' %}</a></li>
+                        <li><a href="#specs" data-toggle="tab">{% trans 'Specification' %}</a></li>
+                	{% else %}
+                        <li class="active"><a href="#specs" data-toggle="tab">{% trans 'Specification' %}</a></li>
+                    {% endif %}
+					{% if ad.files.count %}
+                        <li><a href="#files" data-toggle="tab">{% trans 'Files' %}</a></li>
+					{% endif %}
+                	{% if more_ads %}
+                        <li><a href="#more-ads" data-toggle="tab">{% trans 'More ads' %}</a></li>
+                	{% endif %}
+
+                	<div class="btn-group pull-right">
+                    	{% if create_deal_login_first %}
+                            <a class="btn btn-primary" href="{% url accounts:login %}?next={% url ads:ad_detail ad.pk %}">{% trans 'Login to sign of interest' %}</a>
+						{% elif create_deal_form %}
+							<a href="#create-deal" class="btn btn-primary" role="button" data-toggle="modal">{% trans "Sign of interest" %}</a>
+                        {% elif has_deal_already %}
+                            <a href="javascript:void(0);" class="btn btn-primary disabled" rel="tooltip" data-title="{% trans 'You have already signed of interest on this ad.' %}">{% trans 'Sign of interest' %}</a>
+						{% endif %}
+
+                    	{% if can_update_ad %}
+                            <a class="btn btn-info" href="{% url ads:ad_update pk=ad.pk %}">{% trans 'Update ad' %}</a>
+                    	{% endif %}
+                    </div>
+                </ul>
+
+                <div class="tab-content">
+                	{% if deals %}
+						<div class="tab-pane active" id="deals">
+                            {% include 'deals/deal_list.html' %}
+						</div>
+                	{% endif %}
+                    <div class="tab-pane {% if not deals %}active{% endif %}" id="specs">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="description">
+                                    <p>{% get_localized ad 'description' %}</p>
+                                </div>
+                                <table class="specs table table-striped table-hover">
+                                    <tbody>
+                                    {% for value in ad.value_set.all %}
+                                        <tr>
+                                            <td width="50%">{% get_localized value.field 'label' %}</td>
+                                            <td width="50%"><b>{% get_localized value 'value' %}</b></td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                	{% if more_ads %}
+                        <div class="tab-pane" id="more-ads">
+                            {% include 'ads/ad_list_table.html' with queryset=more_ads %}
+                        </div>
+                	{% endif %}
+
+                    {% if ad.files.count %}
+						<div class="tab-pane" id="files">
+							<div class="files">
+								<ul>
+									{% for file in ad.files.all %}
+										<li>
+											<a href="{{ file.get_url }}" target="_blank">{{ file.title }}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+                    {% endif %}
+                </div>
+            </div>
+    	</div>
+    </div>
+{% endblock %}

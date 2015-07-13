@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>{%block title%}{%endblock%}</title>
+<style type="text/css">
+{% block style %}
+	@page {
+		size: {{pagesize}};
+		margin: 1cm;
+		@frame footer {
+    		-pdf-frame-content: footerContent;
+    		bottom: 1cm;
+    		margin-left: 1cm;
+    		margin-right: 1cm;
+    		height: 1cm;
+		}
+	}
+
+  body { font-family:"Helvetica Neue"; font-size:12px; }
+
+  .mt5 { margin-top:5px; }
+
+  .float-left { float:left; }
+  .float-right { float:right; }
+  .clear { clear:both; }
+  td { vertical-align: top; padding:0; }
+  div.bordered { border:#000 2px solid; margin-bottom:10px; -webkit-border-radius:5px; }
+  .p7 { padding:7px; }
+  .pt3 { padding-top:3px; }
+  .pt10 { padding-top:10px; }
+  .mt20 { margin-top:20px; }
+
+  ul { list-style:none; margin:4px 0; padding:0; }
+
+  .pt3 { padding-top:3px; }
+  .pb3 { padding-bottom:3px; }
+
+  h1, h2, h3, h4, h5, h6  { margin:3px 0; }
+{%endblock%}
+</style>
+</head>
+<body>
+<div>
+{%block content%}{%endblock%}
+</div>
+<div id="footerContent">
+		<pdf:pagenumber>
+</div>
+</body>
+</html>

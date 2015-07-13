@@ -1,0 +1,48 @@
+{% load i18n l10n %}
+<form id="deal-complete-{{ deal.pk|unlocalize }}" class="form-horizontal modal hide fade" method="post" ng-controller="DealController" ng-init="id={{ deal.pk|unlocalize }}; action='{{ deal.COMPLETE }}'" ng-submit="submitDealUpdate()">
+    {% csrf_token %}
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{% trans "Complete deal for ad" %} {{ deal.ad }}</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-show="valid" class="alert alert-success">
+            <h3>{% trans "The deal is now completed." %}</h3>
+        </div>
+        <div ng-hide="valid">
+            <p>
+                {% trans 'Please complete the deal by entering the total price for the quantity that have been sold.' %}
+            </p>
+            <hr>
+            <div class="row-fluid">
+                <div class="span2">
+                    <label for="amount">{% trans 'End quantity' %}</label>
+                    <input type="number" name="amount" id="amount" ng-model="amount" min="1" max="{{ deal.ad.amount }}" ng-init="amount={{ deal.amount|unlocalize }}" ng-change="price=amount*{{ deal.float_unit_bid }}">
+                    <ul class="errorlist" ng-show="!!errors['amount']">
+                        <li ng-repeat="error in errors['amount']">{! error !}</li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <label for="price">{% trans 'End price' %}</label>
+                    <div class="input-append amount">
+                        <input type="text" id="price" name="price" ng-model="price" ng-init="price=amount*{{ deal.float_unit_bid }}">
+                        <div class="add-on">
+							{{ deal.currency.code }}
+                        </div>
+                    </div>
+
+                    <ul class="errorlist" ng-show="!!errors['price']">
+                        <li ng-repeat="error in errors['price']">{! error !}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p ng-show="!!errors['action']">
+            <span class="error" ng-repeat="error in errors['action']">{! error !}</span>
+        </p>
+        <a href="#deal-{{ deal.pk }}" data-toggle="modal" data-dismiss="modal" class="btn pull-left">{% trans "Close" %}</a>
+        <input ng-hide="valid" type="submit" class="btn btn-primary" value="{% trans "Complete deal" %}">
+    </div>
+</form>

@@ -1,0 +1,24 @@
+{% load i18n %}
+<div class="well dashboard big">
+    <div class="row">
+        <div class="span3">
+            {% trans 'Views' %}
+            <div>{{ total_views }}</div>
+        </div>
+        <div class="span3">
+            {% trans 'Active ads' %}
+            <div>{{ total_active_ads }}</div>
+        </div>
+        <div class="span3">
+            {% trans 'Sold products' %}
+            <div>{{ total_sold_products }}</div>
+        </div>
+    </div>
+</div>
+<div class="well dashboard meter">
+    <div class="row">
+        <div class="span9">
+            <h3>{% trans 'Commission level' %} {{ current_commission_level.perc }}%</h3><span>{% trans 'Explaination?' %}</span>
+        </div>
+    </div>
+</div>

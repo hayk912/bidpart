@@ -1,0 +1,23 @@
+{% load cms_extras files_extras locale_extras %}
+{% if pages %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            init_frontpage_slider();
+        });
+    </script>
+    <div id="frontpage-slider" class="royalSlider rsFrontpage">
+        {% for page in pages %}
+            <div class="slider-page">
+                <div class="img">
+                    {% if page.image %}
+                        <img src="{% get_thumb page.image 'slider_thumb' %}">
+                    {% endif %}
+                </div>
+                <div class="text">
+                    <h1>{% get_localized page 'title' %}</h1>
+                    <p>{% get_localized page 'body' %}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

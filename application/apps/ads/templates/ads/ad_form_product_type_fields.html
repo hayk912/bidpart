@@ -1,0 +1,32 @@
+{% load i18n %}
+<legend>{% trans 'Product specification' %}</legend>
+{% for field, db_field in form.product_type_fields %}
+    {% if forloop.counter0|divisibleby:"3" %}
+        <div class="row">
+        <!-- New row every third -->
+    {% endif %}
+    <div class="span3 {{ field.css_classes }}">
+        {{ field.label_tag }}
+        {% if db_field.suffix %}
+            <div class="input-append spec-suffix">
+                {{ field }}
+                <div class="add-on">
+                    {{ db_field.suffix }}
+                </div>
+            </div>
+        {% else %}
+            {{ field }}
+        {% endif %}
+        {{ field.errors }}
+    </div>
+    {% if forloop.last or forloop.counter|divisibleby:"3" %}
+        <!-- End new row -->
+        </div>
+    {% endif %}
+{% empty %}
+    <div class="row">
+    	<div class="span12">
+    		<p>{% trans 'Please choose a product type' %}</p>
+    	</div>
+    </div>
+{% endfor %}

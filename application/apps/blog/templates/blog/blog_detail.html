@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block header_search_form %}
+    <h1>{% trans 'Blog' %}</h1>
+{% endblock %}
+{% block content %}
+
+    {% include 'blog/blog_entry.html' with entry=blogentry %}
+
+{% endblock %}

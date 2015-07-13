@@ -1,0 +1,45 @@
+{% load i18n accounts_extras %}
+{% if group == 'settings' %}
+    <div  class="sidebar-list well">
+        <ul>
+            <li class="header rope">{% trans "Settings" %}</li>
+            <li class="list-item{% if group == 'settings' and type == 'account_form' %} active{% endif %}">
+                <a href="{% url accounts:account_form %}">My details</a>
+            </li>
+            <li class="list-item{% if group == 'settings' and type == 'change_password' %} active{% endif %}">
+                <a href="{% url password_change %}">{% trans 'Change password' %}</a>
+            </li>
+            <li class="list-item"><a href="{% url accounts:logout %}">{% trans 'Logout' %}</a></li>
+        </ul>
+    </div>
+{% else %}
+    <div class="sidebar-list well">
+        <ul>
+            <li class="header rope">{% trans "Your ads" %}</li>
+            <li class="list-item{% if group == 'ads' and type == 'active' %} active{% endif %}">
+                <a href="{% url accounts:index %}">{% trans 'Active' %} <span data-icon="&#xe002;"></span><span class="count">{{ ads_active_count }}</span></a>
+            </li>
+            <li class="list-item{% if group == 'ads' and type == 'unpublished' %} active{% endif %}">
+                <a href="{% url accounts:index group='ads' type='unpublished' %}">{% trans 'Unpublished' %} <span data-icon="&#xe002;"></span><span class="count">{{ ads_unpublished_count }}</span></a>
+            </li>
+            <li class="list-item{% if group == 'ads' and type == 'completed' %} active{% endif %}">
+                <a href="{% url accounts:index group='ads' type='completed' %}">{% trans 'Completed' %} <span data-icon="&#xe002;"></span><span class="count">{{ deals_completed_count }}</span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div  class="sidebar-list well mt">
+        <ul>
+            <li class="header rope">{% trans "Your bids" %}</li>
+            <li class="list-item{% if group == 'deals' and type == 'active' %} active{% endif %}">
+                <a href="{% url accounts:index group='deals' type='active' %}">{% trans 'Active' %} <span data-icon="&#xe002;"></span><span class="count">{{ deals_active_count }}</span></a>
+            </li>
+            <li class="list-item{% if group == 'deals' and type == 'cancelled' %} active{% endif %}">
+                <a href="{% url accounts:index group='deals' type='canceled' %}">{% trans 'Canceled' %} <span data-icon="&#xe002;"></span><span class="count">{{ deals_cancelled_count }}</span></a>
+            </li>
+            <li class="list-item{% if group == 'deals' and type == 'completed' %} active{% endif %}">
+                <a href="{% url accounts:index group='deals' type='completed' %}">{% trans 'Completed' %} <span data-icon="&#xe002;"></span><span class="count">{{ deals_completed_count }}</span></a>
+            </li>
+        </ul>
+    </div>
+{% endif %}

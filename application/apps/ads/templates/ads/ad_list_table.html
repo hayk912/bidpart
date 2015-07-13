@@ -1,0 +1,86 @@
+{% load i18n ads_extras files_extras locale_extras %}
+<table class="table ads-table">
+
+    <thead>
+        <tr>
+            {% if form %}
+                {% if queryset_name %}
+                    <th class="queryset-name" colspan="2">
+                        {% if name_icon %}
+                            <span data-icon="{{ name_icon }}"></span>
+                        {% endif %}
+                        {% trans queryset_name %}
+                    </th>
+                {% else %}
+                    <th>Sort by:</th>
+                    <th>{% order_by_link 'Product name' 'title' form %}</th>
+                {% endif %}
+                {% if form %}
+                    <th>{% order_by_link 'Date added' 'created' form %}</th>
+                    <th>{% trans 'Quantity' %}</th>
+                    <th class="text-right">{% order_by_link 'Price' 'converted_price' form %} ({{ CURRENCY.code }})</th>
+                {% else %}
+                    <th>{% trans 'Date added' %}</th>
+                    <th>{% trans 'Quantity' %}</th>
+                    <th class="text-right">{% trans 'Price' %} ({{ CURRENCY.code }})</th>
+                {% endif %}
+
+
+            {% else %}
+                {% if queryset_name %}
+                    <th class="queryset-name" colspan="2">
+                        {% if name_icon %}
+                            <span data-icon="{{ name_icon }}"></span>
+                        {% endif %}
+                        {% trans queryset_name %}
+                    </th>
+                {% else %}
+                    <th>&nbsp;</th>
+                    <th>{% trans 'Product name' %}</th>
+                {% endif %}
+                <th>{% trans 'Date added' %}</th>
+                <th>{% trans 'Quantity' %}</th>
+                <th class="text-right">{% trans 'Price' %} ({{ CURRENCY.code }})</th>
+            {% endif %}
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for ad in queryset %}
+            <tr bp-href="{{ ad.get_absolute_url }}">
+                <td class="twidth2 image">
+                    <img class="image" width="78" height="48" src="{% get_thumb ad.images.all.0 'list_thumb' %}">
+                </td>
+                <td class="twidth{% if show_status %}5{% else %}4{% endif %}">
+                    <h4>
+                        {% if ad.is_request %}
+                            <span class="label">{% trans 'BUYING' %}</span>
+                        {% endif %}
+                        <span>{% get_localized ad 'title' %}</span>
+                    </h4>
+                    {% if show_status %}
+                        {% include 'ads/ad_deals.html' with ad=ad group=group %}
+                    {% else %}
+                        {% for bd in ad.business_domains.all|slice:':2' %}
+                            {% get_localized bd 'title' %}{% if not forloop.last %}&middot;{% endif %}
+                        {% endfor %}
+
+                    {% endif %}
+                </td>
+                <td class="twidth3">{{ ad.created|timesince }} {% trans 'ago' %}</td>
+                <td class="twidth1">
+                    {% if ad.amount > 1 %}
+                        {{ ad.amount }}<br>
+                    {% endif %}
+                    1
+                </td>
+                <td class="price twidth2 text-right {% if ad.amount > 1 %}multiple-amount{% endif %}">
+                    {% if ad.amount > 1 %}
+                        {% price ad.total_price ad.currency 'total-price' %}<br>
+                    {% endif %}
+                    {% price ad.price ad.currency 'price' %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

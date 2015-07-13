@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+	<div class="row">
+		<form action="{{ request.path }}" method="post" class="span4 login-form">
+            <div class="page-header">
+                <h1>{% trans 'Login' %}</h1>
+            </div>
+
+			{% csrf_token %}
+			{{ form.non_field_errors }}
+			{% for hidden in form.hidden_fields %}
+				{{ hidden }}
+			{% endfor %}
+
+			<div class="row">
+				<div class="span4">
+					{{ form.email.label_tag }}
+					{{ form.email }}
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span4">
+					{{ form.password.label_tag }}
+					{{ form.password }}
+					<i><a class="reset-password pull-right" href="{% url password_reset %}">{% trans 'Forgot your password?' %}</a></i>
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<div class="pull-left remember-me">
+					<label class="checkbox">
+						{{ form.remember_me }}
+						{{ form.remember_me.label }}
+					</label>
+				</div>
+				<div class="pull-right">
+					<input type="submit" class="btn btn-success pull-right span2" value="{% trans 'Login' %}"><br>
+				</div>
+
+			</div>
+		</form>
+    	<div class="span4">
+            <div class="page-header row">
+                <h1>{% trans 'Signup' %}</h1>
+            </div>
+            <p>{% trans "Don't have an account?" %}</p>
+            <a class="btn btn-primary btn-large btn-block btn-important" href="{% url accounts:signup %}">{% trans 'Create an account' %}</a>
+    	</div>
+	</div>
+{% endblock %}

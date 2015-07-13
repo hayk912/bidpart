@@ -1,0 +1,30 @@
+{% load i18n %}
+<div class="page-header filter-header">
+    <h3>{% trans 'Filter ads' %}</h3>
+</div>
+{{ form.business_domain }}
+<div id="ad-list-sidebar" class="row sidebar-list well">
+	<ul data-field="{{ field }}">
+		{% if field == 'product_type' %}
+			<li class="back-item">
+				<a href="{{back_url}}" class="btn btn-block back">{% trans 'Back' %}</a>
+			</li>
+		{% endif %}
+
+		{% if all_url %}
+			<li class="list-item {% if not active_value %}active{% endif %}">
+				<a href="{{all_url}}" class="all-link">
+					{{all_string}}
+				</a>
+			</li>
+		{% endif %}
+		{% for choice in choices %}
+			<li class="list-item {% if choice.value == active_value %}active{% endif %}">
+				<a href="{{choice.url}}">
+					{{ choice.label }}
+                    <span data-icon="&#xe002;"></span>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

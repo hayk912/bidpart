@@ -1,0 +1,31 @@
+{% load i18n %}
+<form id="deal-extend-{{ deal.pk }}" class="form-horizontal modal hide fade" method="post" ng-controller="DealController" ng-init="id={{ deal.pk }}; action='{{ deal.EXTEND }}'" ng-submit="submitDealUpdate()">
+    {% csrf_token %}
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{% trans "Extend deal for ad" %} {{ deal.ad }}</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-show="valid" class="alert alert-success">
+            <h3>{% trans "The deal is now extended." %}</h3>
+        </div>
+        <div ng-hide="valid">
+            <p>
+                {% trans "We send inactivity notifications to make sure all deals get the attention needed. By extending this deal we know you're allready working on it and wont send those reminders." %}
+            </p>
+            <hr>
+            <p ng-show="!!errors['bid']">
+                <span class="help-inline error">{!errors['bid']!}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <p ng-show="!!errors['action']">
+            <span class="error" ng-repeat="error in errors['action']">{! error !}</span>
+        </p>
+        <a href="#deal-{{ deal.pk }}" data-toggle="modal" data-dismiss="modal" class="btn pull-left">{% trans "Close" %}</a>
+        <input ng-hide="valid" type="submit" class="btn btn-primary" value="{% trans "Extend deal" %}">
+    </div>
+</form>

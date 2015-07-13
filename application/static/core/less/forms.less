@@ -1,0 +1,125 @@
+@import "./bootstrap/variables.less";
+@import "./bootstrap/mixins.less";
+
+label.checkbox {
+	> input {
+		margin-top:2px;
+	}
+}
+
+[class*="span"] > .btn-group {
+	width:100%;
+
+	> .btn.dropdown-toggle {
+		width:100%;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+}
+
+[class*="span"] > input[type="text"],
+[class*="span"] > input[type="password"],
+[class*="span"] > input[type="number"]{
+	height:26px;
+}
+
+[class*="span"] > input[type="text"],
+[class*="span"] > input[type="password"],
+[class*="span"] > input[type="number"],
+[class*="span"] > textarea {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:100%;
+}
+
+.errorlist {
+	color:@errorText;
+}
+
+.error {
+	input[type="text"],
+	textarea,
+	.btn {
+		border-color:@errorBorder;
+		color:@errorText;
+	}
+
+	label {
+		color:@errorText;
+	}
+}
+
+.required label:after {
+	content:" *";
+}
+
+.inline-form-label {
+	display:inline;
+}
+
+.input-append, .input-prepend {
+	.select2-container {
+		margin-bottom:0;
+	}
+	color:@black;
+	margin-bottom:8px;
+	.add-on {
+		background-color: @addOnBackground;
+	}
+}
+
+ul.checkboxes {
+	margin-left:0px;
+	li {
+		list-style-type:none;
+		margin:0px;
+		padding:0px;
+		label input {
+			margin-top:-2px;
+			margin-right:5px;
+		}
+	}
+}
+.form-big {
+	legend {
+		color:@grayDark;
+		font-size:22px;
+		line-height:50px;
+
+		> span.blue-blup {
+			background:@blue;
+			color:@white;
+			display:inline-block;
+			width:32px;
+			height:32px;
+			.border-radius(32px);
+			margin-bottom:-7px;
+			margin-right:10px;
+			text-align:center;
+			line-height:32px;
+		}
+	}
+
+	label {
+		font-size:14px;
+		line-height:24px;
+	}
+	input[type="text"], input[type="password"] {
+		height:40px;
+		margin-bottom:20px;
+	}
+
+	.btn-group {
+		height:40px;
+		> .btn.dropdown-toggle {
+			height:40px;
+			line-height:29px;
+
+			&.dropdown-arrow:after {
+				margin-top:12px;
+			}
+		}
+	}
+}

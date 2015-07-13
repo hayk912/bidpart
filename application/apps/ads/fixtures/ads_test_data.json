@@ -1,0 +1,130 @@
+[
+    {
+        "pk": 1,
+        "model": "ads.value",
+        "fields": {
+            "field": 1,
+            "ad": 1,
+            "value": "Hej hej"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "ads.value",
+        "fields": {
+            "field": 2,
+            "ad": 1,
+            "value": "200"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "ads.value",
+        "fields": {
+            "field": 3,
+            "ad": 1,
+            "value": "True"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "ads.businessdomain",
+        "fields": {
+            "title": "Domain1",
+            "slug": "domain1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "ads.businessdomain",
+        "fields": {
+            "title": "Domain2",
+            "slug": "domain2"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "ads.businessdomain",
+        "fields": {
+            "title": "Domain3",
+            "slug": "domain3"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "ads.producttype",
+        "fields": {
+            "fields": [
+                1,
+                2,
+                3
+            ],
+            "product_categories": [
+                1,
+                2
+            ],
+            "title": "ProductType1",
+            "slug": "producttype1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "ads.producttype",
+        "fields": {
+            "fields": [
+                1
+            ],
+            "product_categories": [
+                1
+            ],
+            "title": "ProductType2",
+            "slug": "producttype2"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "ads.productcategory",
+        "fields": {
+            "title": "Category1",
+            "slug": "category1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "ads.productcategory",
+        "fields": {
+            "title": "Category2",
+            "slug": "category2"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "ads.field",
+        "fields": {
+            "required": true,
+            "type": "CharField",
+            "suffix": "",
+            "label": "Field1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "ads.field",
+        "fields": {
+            "required": true,
+            "type": "IntegerField",
+            "suffix": "cm",
+            "label": "Field2"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "ads.field",
+        "fields": {
+            "required": true,
+            "type": "BooleanField",
+            "suffix": "",
+            "label": "Field3"
+        }
+    }
+]

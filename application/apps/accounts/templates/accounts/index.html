@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load accounts_extras i18n ads_extras %}
+{% block title %}{{ request.user.get_business_profile }}{% endblock %}
+{% block header_search_form %}
+    <div class="account-header row">
+        <div class="span6">
+            <h2>
+                {{ request.user.get_business_profile }}
+                <span>
+                    {{ request.user.get_full_name }}
+                </span>
+            </h2>
+        </div>
+    	{% comment %}
+        <div class="span3">
+            <div class="switch-wrapper">
+            {% if user.get_userprofile.get_num_business_profiles > 1 %}
+
+                    <select name="business_profile" id="switch_business_profile">
+                    <option value="">{% trans 'Switch profile' %}</option>
+                    {% for bp in user.get_userprofile.get_business_profiles %}
+                        <option value="{{ bp.pk }}">{{ bp }}</option>
+                    {% endfor %}
+                    </select>
+
+            {% endif %}
+            </div>
+        </div>
+        {% endcomment %}
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    {% accounts_sidebar %}
+{% endblock %}
+
+{% block sidebar_middle %}
+    {% commission_levels %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+
+        <div class="span9">
+            <ul class="breadcrumb">
+                <li>{{ request.user.get_business_profile }} <span class="divider">/</span></li>
+                <li class="active">{% trans 'Dashboard' %}</li>
+            </ul>
+            {% accounts_dashboard %}
+            {% include "ads/ad_list_table.html" with show_status=1 queryset=object_list %}
+            {% pagination %}
+        </div>
+    </div>
+
+{% endblock %}

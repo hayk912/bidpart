@@ -1,0 +1,25 @@
+{% load i18n %}
+{% load ads_extras %}
+<table class="table ads-table">
+    <thead>
+    </thead>
+
+    <tbody>
+        {% for ad in queryset %}
+            <tr>
+                <td>
+                    <img class="image" width="78" height="48" src="http://i.imgur.com/zw0Wp.jpg">
+                </td>
+                <td>
+                    <div>
+						<a class="title" href="{{ ad.get_absolute_url }}">{{ ad.title }}</a>
+						<p>{{ ad.business_domains.all|join:" &middot; " }}</p>
+                    </div>
+                </td>
+                <td>{{ ad.created|timesince }}</td>
+                <td>{{ ad.amount }}</td>
+                <td>{% price ad.price ad.currency %}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+{% load ads_extras %}
+{% load cms_extras %}
+{% load accounts_extras files_extras %}
+{% load compress static i18n locale_extras %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+	<link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.png' %}">
+    {% compress js %}
+		<script type="text/javascript" src="{% static 'core/js/jquery-1.8.2.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/jquery.cookie.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/royalslider/jquery.royalslider.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-dropdown.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-tooltip.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-popover.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-modal.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-tab.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-alert.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/js/bootstrap/bootstrap-button.js' %}"></script>
+		<script type="text/javascript" src="{% static 'angularjs/js/angular.js' %}"></script>
+		<script type="text/javascript" src="{% static 'angularjs/js/angular-resource.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'angularjs/js/angular-ui.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/select2/select2-bootstrap.js' %}"></script>
+        <script type="text/javascript" src="{% static 'core/js/jquery.form.js' %}"></script>
+
+		<script type="text/javascript" src="{% static 'core/js/base.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'cms/js/slider.js' %}"></script>
+
+		<script type="text/javascript" src="{% static 'deals/js/controllers.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'ads/js/slider.js' %}"></script>
+		<script type="text/javascript" src="{% static 'ads/js/controllers.js' %}"></script>
+        <script type="text/javascript" src="{% static 'ads/js/ad-list-sidebar.js' %}"></script>
+    {% endcompress %}
+
+    <!--[if lt IE 9]>
+    {% compress js %}
+    <script type="text/javascript" src="{% static 'core/js/selectivizr-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'core/js/html5shiv.js' %}"></script>
+    <script type="text/javascript" src="{% static 'angularjs/js/angular-ui-ieshiv.min.js' %}"></script>
+    {% endcompress %}
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+	<script src="{% static 'core/js/icons-lte-ie7.js' %}"></script>
+	<![endif]-->
+
+	{% compress css %}
+        <link rel="stylesheet" href="{% static 'angularjs/css/angular-ui.css' %}">
+        <link rel="stylesheet" href="{% static 'core/css/rs-default-inverted.css' %}">
+        <link rel="stylesheet" href="{% static 'core/css/rs-default.css' %}">
+        <link rel="stylesheet" href="{% static 'core/royalslider/royalslider.css' %}">
+
+        <link rel="stylesheet" href="{% static 'core/css/icons.css' %}">
+
+        <link rel="stylesheet" href="{% static 'cms/css/rs-frontpage.css' %}">
+        <link rel="stylesheet" type="text/less" href="{% static 'cms/less/slider.less' %}">
+
+    	<link type="text/less" rel="stylesheet" href="{% static 'core/less/bootstrap/bootstrap.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/bootstrap_bidpart.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/accounts.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/sidebar.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/header.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/footer.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'core/less/forms.less' %}">
+
+        <link type="text/less" rel="stylesheet" href="{% static 'ads/less/ads.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'blog/less/blog.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'deals/less/deal_modal.less' %}">
+		<link type="text/less" rel="stylesheet" href="{% static 'accounts/less/accounts.less' %}">
+        <link type="text/less" rel="stylesheet" href="{% static 'interest/less/interest.less' %}">
+
+        <link type="text/less" rel="stylesheet" href="{% static 'core/select2/select2-bootstrap.less' %}">
+    {% endcompress %}
+
+    <!--[if lte IE 9]>
+    {% compress css %}
+	<link type="text/less" rel="stylesheet" href="{% static 'core/less/ie.less' %}">
+	{% endcompress %}
+	<![endif]-->
+
+    <!--[if lte IE 8]>
+    {% compress css %}
+	<link type="text/less" rel="stylesheet" href="{% static 'core/less/ie78.less' %}">
+	{% endcompress %}
+	<![endif]-->
+
+    <!--[if IE 8]>
+    {% compress css %}
+	<link type="text/less" rel="stylesheet" href="{% static 'core/less/ie8.less' %}">
+	{% endcompress %}
+	<![endif]-->
+
+    <!--[if lte IE 7]>
+    {% compress css %}
+	<link type="text/less" rel="stylesheet" href="{% static 'core/less/ie7.less' %}">
+	{% endcompress %}
+	<![endif]-->
+
+    <script type="text/javascript">
+        {% if settings.ENVIRONMENT == 'production' %}
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38035743-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        {% endif %}
+
+        var $buoop = {vs:{i:7,f:3.6,o:10.6,s:4,n:9}}
+        $buoop.ol = window.onload;
+
+        window.onload=function(){
+            try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "http://browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script>
+
+    {% block javascript %}
+
+	{% endblock %}
+
+    <title>{% block title %}Industrial equipment{% endblock %} - Bidpart</title>
+</head>
+<body class="ng-app:Bidpart" ng-app="Bidpart">
+    {% block modals %}{% endblock %}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                {% trans "Language" %}:
+                                <img class="flag" src="{% flag LANGUAGE_CODE %}" alt="{{ LANGUAGE_CODE }}">
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for lang_code in LANGUAGES %}
+                                    <li>
+                                        <a href="{% url accounts:change_language lang_code=lang_code.0 %}">
+											<img src="{% flag lang_code.0 %}" alt="{{ lang_code.1 }}">
+                                            {{lang_code.1}}
+                                            <b>({{lang_code.0|upper}})</b>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    	<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                {% trans 'Currency' %}:
+                                <strong>{{ CURRENCY.code }}</strong>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for currency in CURRENCIES %}
+									<li>
+										<a href="{% url currencies_set_currency %}?currency={{ currency.code }}">
+											{{ currency.name }}
+											<b>({{ currency.code }})</b>
+										</a>
+									</li>
+                                {% endfor %}
+                            </ul>
+                    	</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                {% trans 'Show' %}:
+                                <strong>{{ SHOW_BUY_SELL_ACTIVE.1 }}</strong>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for show in SHOW_BUY_SELL_CHOICES %}
+                                    <li>
+                                        <a href="{% url ads:show_buy_sell show=show.0 %}">
+                                            <b>{{ show.1 }}</b>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+
+					<ul class="nav pull-right">
+                        <li><div class="fb-like" data-href="http://www.bidpart.se" data-send="false" layout="button_count" data-width="50" data-show-faces="false"></div></li>
+                        {% pages_links %}
+                        {% if user.is_authenticated %}
+                            <li class="dropdown">
+                                <a class="account-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span data-icon="&#xe00e;"></span>
+                                    {% trans 'My Account' %}
+                                </a>
+								<ul class="dropdown-menu">
+									<li><a href="{% url accounts:index %}">{{ request.user.get_business_profile.business_name }}</a></li>
+									{% if request.user.get_business_profile.is_agent %}
+										<li><a href="{% url accounts:agent_index %}">{% trans 'Agent Dashboard' %}</a></li>
+									{% endif %}
+                                    <li><a href="{% url accounts:account_form %}">{% trans 'My Details' %}</a></li>
+									<li><a href="{% url accounts:logout %}">{% trans 'Logout' %}</a></li>
+								</ul>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a class="account-link" href="{% url accounts:login %}">
+                                    <span data-icon="&#xe00e;"></span>
+                                    {% trans 'Login / Signup' %}
+                                </a>
+                            </li>
+                        {% endif %}
+
+					</ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-static-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="/" class="brand">Buy and sell industrial equipment</a>
+                    {% block header_search_form %}
+                        {% header_search %}
+                    {% endblock %}
+                </div>
+
+            </div>
+        </div>
+        {% block header_content %}{% endblock %}
+    </header>
+
+    <div id="main-container" class="container">
+    	<div class="row">
+            <div class="span3" id="sidebar">
+                {% block sidebar %}
+
+                {% endblock %}
+
+                {% block create_ad_button %}
+                <p>
+                    <a class="btn btn-primary btn-large btn-block btn-important btn-icon" href="{% url ads:ad_create %}">
+                        {% trans 'Place new ad' %}
+                        <span data-icon="&#xe015;"></span>
+                    </a>
+                </p>
+                {% endblock create_ad_button %}
+
+                {% block sidebar_middle %}{% endblock %}
+            	<div class="support">
+                    <div class="icon" data-icon="&#xe008;"></div>
+                    <div class="texts">
+						<h4>{% trans 'Free support' %}</h4>
+                        <p>{% trans 'Call' %} +46 660 51177</p>
+                        <p>{% trans 'Email' %} <a href="mailto:info@bidpart.se">info@bidpart.se</a></p>
+                    </div>
+            	</div>
+
+                {% block sidebar_lower %}{% endblock %}
+            </div>
+            <div class="span9">
+                {% block content %}{% endblock %}
+            </div>
+    	</div>
+    </div>
+
+    <footer>
+    	<div class="container">
+            <div class="row">
+                {% block footer_content %}
+                    <div class="span3">
+                    	<div><img style="height:32px;" src="{% static 'core/img/logo.png' %}"></div>
+                    	<ul>
+                            <li>Copyright &copy; {% now 'Y' %} Bidpart AB</li>
+                            {% pages_links %}
+                            <li><a href="{{ settings.BIDPART_FB_URL }}">{% trans 'Bidpart on Facebook' %}</a></li>
+                            <li>{% page_link 'environment' %}</li>
+                    	</ul>
+
+                    </div>
+                    <div class="span3">
+                    	<h4>{% trans 'About the site' %}</h4>
+                    	<ul>
+                            <li>{% page_link 'cookies' %}</li>
+                            <li>{% page_link 'browsers' %}</li>
+                            <li><a href="{% url contact:index %}">{% trans 'Report error' %}</a></li>
+                            <li><a href="{% sitefile 'terms' %}" target="_blank">{% trans 'Terms and Conditions' %}</a></li>
+                            <li>{% page_link 'privacy' %}</li>
+                    	</ul>
+                    </div>
+                    <div class="span3">
+                    	<h4>Information</h4>
+                    	<ul>
+                            <li><a href="{{ settings.BIDPART_FB_URL }}">{% trans 'Bidpart on Facebook' %}</a></li>
+                            <li><a href="{% url contact:index %}">{% trans 'Contact us' %}</a></li>
+                            <li><a href="{% url faq:index %}">{% trans 'FAQ' %}</a></li>
+                            <li><a href="{% url blog:blog_list %}">{% trans 'Blog' %}</a></li>
+                    	</ul>
+                    </div>
+                    <div class="span3">
+                        <h4>Site Settings</h4>
+                    	<ul>
+                            <li>{% trans 'Language' %}: <strong>{{ LANGUAGE_CODE|upper }}</strong></li>
+                            <li>{% trans 'Currency' %}: <strong>{{ CURRENCY.code }}</strong></li>
+                            {% if user.is_authenticated %}
+                                <li><a href="{% url accounts:index %}">{% trans 'My Account' %}</a></li>
+                            {% else %}
+                                <li><a href="{% url accounts:login %}">{% trans 'Login' %}</a></li>
+                            {% endif %}
+                    	</ul>
+                    </div>
+                {% endblock %}
+            </div>
+    	</div>
+    </footer>
+</body>
+</html>

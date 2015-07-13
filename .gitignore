@@ -1,0 +1,12 @@
+.project
+.pydevproject
+*.DS_Store
+*.pyc
+media/*
+static/*
+invoices/*
+uwsgi.pid
+database.sqlite
+.idea
+.vagrant
+.vagrant*

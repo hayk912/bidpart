@@ -1,0 +1,38 @@
+{% load i18n %}
+<form id="deal-cancel-{{ deal.pk }}" class="form-horizontal modal hide fade" method="post" ng-controller="DealController" ng-init="id={{ deal.pk }}; action='{{ deal.CANCEL }}'" ng-submit="submitDealUpdate()">
+    {% csrf_token %}
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{% trans "Cancel deal for ad" %} {{ deal.ad }}</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-show="valid" class="alert alert-success">
+            <h3>{% trans "The deal is now canceled." %}</h3>
+        </div>
+        <div ng-hide="valid">
+            <p>
+                {% trans 'To get the statistics, we wish that you give the reason for you to cancel the deal. This information is for internal use only and will not be shown to the other party.' %}
+            </p>
+            <p>
+                {% trans 'In order to offer other equipment we will contact the other party when a deal is cancelled.' %}
+            </p>
+            <hr>
+            <div class="row-fluid">
+                <div class="span10">
+                   <label>{% trans 'Reason for canceling' %}</label>
+                   <textarea name="cancel_reason" ng-model="cancel_reason"></textarea>
+                </div>
+            </div>
+            <ul class="errorlist" ng-show="!!errors['reason']">
+                <li ng-repeat="error in errors['reason']">{! error !}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <p ng-show="!!errors['action']">
+            <span class="error" ng-repeat="error in errors['action']">{! error !}</span>
+        </p>
+        <a href="#deal-{{ deal.pk }}" data-toggle="modal" data-dismiss="modal" class="btn pull-left">{% trans "Close" %}</a>
+        <input ng-hide="valid" type="submit" class="btn btn-primary" value="{% trans "Cancel deal" %}">
+    </div>
+</form>

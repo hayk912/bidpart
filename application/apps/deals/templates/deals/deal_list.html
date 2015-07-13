@@ -1,0 +1,96 @@
+{% load i18n ads_extras locale_extras %}
+{% for deal in ad.deals.all %}
+	<div id="deal-{{ deal.pk }}" class="modal hide fade deal-actions">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>{% get_localized deal.ad 'title' %} - {{ deal.owner.business_name }}</h3>
+		</div>
+        <div class="modal-body">
+			{% if deal.state == 'interested' %}
+                <p><b>{% trans 'Bid' %}:</b> {{ deal.bid }} {{ deal.currency.code }}</p>
+                <p>{% trans 'Begin negotiations to see contact information' %}</p>
+			{% else %}
+                <p><b>{% trans 'Business name' %}</b>: {{ deal.owner }}</p>
+                <p><b>{% trans 'Address' %}</b>: {{ deal.owner.address }} {{ deal.owner.address_zipcode }} {{ deal.owner.address_city }} {{ deal.owner.country }}</p>
+                <p><b>{% trans 'Email' %}</b>: {{ deal.creator.user.email }}</p>
+                <p><b>{% trans 'Phone' %}</b>: {{ deal.creator.phone }}</p>
+				{% if deal.state == 'canceled' %}
+                    <p><b>{% trans 'Cancel reason' %}</b>: {{ deal.cancel_reason }}</p>
+				{% endif %}
+			{% endif %}
+        </div>
+    	<div class="modal-footer">
+			<a data-dismiss="modal" href="#deal-{% if deal.state == 'active' %}extend{% else %}activate{% endif %}-{{ deal.pk }}" class="btn btn-info action negotiation-button{% if deal.state == 'canceled' or deal.state == 'completed' %} disabled{% endif %}" data-toggle="modal">
+				{% if deal.state == 'active' %}
+					{% trans 'Extend negotiation time' %}
+				{% else %}
+					{% trans 'Begin negotiations' %}
+				{% endif %}
+			</a>
+			<a data-dismiss="modal" href="#deal-cancel-{{ deal.pk }}" class="btn btn-danger action cancel-button{% if deal.state != 'active' %} disabled{% endif %}{% if deal.state == 'canceled' %} unavailable{% endif %}" data-toggle="modal">
+				{% trans 'Cancel deal' %}
+			</a>
+			<a data-dismiss="modal" href="#deal-complete-{{ deal.pk }}" class="btn btn-success action complete-button{% if deal.state != 'active' %} disabled{% endif %}{% if deal.state == 'completed' %} unavailable{% endif %}" data-toggle="modal">
+				{% trans 'Deal complete' %}
+			</a>
+    	</div>
+	</div>
+{% endfor %}
+<table class="table table-striped">
+    <thead>
+    	<tr>
+            <th>{% trans 'State' %}</th>
+            <th>{% trans 'Customer' %}</th>
+            <th>{% trans 'Date' %}</th>
+            <th>{% trans 'Bid' %}</th>
+            <th>&nbsp;</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	{% for deal in ad.deals.all %}
+			<tr>
+				<td>
+                    <a href="#deal-{{ deal.pk }}" data-toggle="modal">
+						{% if deal.state == 'interested' %}
+							<span class="label label-success">
+						{% elif deal.state == 'active' %}
+							<span class="label label-info">
+						{% else %}
+							<span class="label">
+						{% endif %}
+							{{ deal.get_state_display }}
+						</span>
+                    </a>
+				</td>
+            	<td>
+					<a href="#deal-{{ deal.pk }}" data-toggle="modal">
+						{% if deal.state != 'interested' %}
+							{{ deal.owner }}
+						{% else %}
+							{% trans 'Begin negotiations to see contact information' %}
+						{% endif %}
+                    </a>
+                </td>
+				<td>
+					{{ deal.created|timesince }} {% trans 'ago' %}
+				</td>
+            	<td>
+					<b>{% price deal.bid deal.ad.currency 'price' False %}</b>
+					{% if deal.amount > 1 %}
+						{{ deal.amount }} {% trans 'pcs' %}
+					{% endif %}
+            	</td>
+            	<td>
+                    <a href="#deal-{{ deal.pk }}" class="btn btn-primary btn-small" data-toggle="modal">{% trans 'Show' %}</a>
+            	</td>
+			</tr>
+    	{% endfor %}
+    </tbody>
+</table>
+
+{% if update_deal_forms %}
+	{% for template, form, deal in update_deal_forms %}
+		{% include template with form=form deal=deal %}
+	{% endfor %}
+{% endif %}
+
