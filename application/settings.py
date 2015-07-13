@@ -7,7 +7,7 @@ import django
 import os
 import sys
 
-DEBUG = False
+DEBUG = True
 #TEMPLATE_DEBUG = DEBUG
 #TEMPLATE_DEBUG = False
 TEMPLATE_DEBUG = True
