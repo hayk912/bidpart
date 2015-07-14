@@ -122,6 +122,8 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+os.environ.get('BASE_IRI', 'localhost')
+
 ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
