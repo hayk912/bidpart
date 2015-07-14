@@ -396,7 +396,7 @@ from django.template.defaultfilters import slugify
 
 import socket
 #hostname = slugify(socket.gethostname()).replace('-', '_')
-hostname = 'bidpartherokuappcom.py'
+hostname = 'bidpartherokuappcom'
 if os.path.exists(os.path.join(SITE_ROOT, "application/local_settings/%s.py" % hostname)):
     exec("from local_settings.%s import *" % hostname)
 else:
