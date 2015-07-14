@@ -11,6 +11,7 @@ django-object-permissions==1.4.4
 django-autofixture==0.2.5
 Django==1.4.2
 docutils==0.9.1
+git+https://github.com/django/django.git
 git+git://github.com/stefanfoulis/django-sendsms.git
 git+git://github.com/stelzzz/django-currencies.git
 markdown==2.2.1
