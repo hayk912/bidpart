@@ -27,7 +27,7 @@ ssh==1.8.0
 versiontools==1.9.1
 wsgiref==0.1.2
 
-xhtml2pdf==0.0.4
+
 pytz==2012h
 phpserialize
 fabtools==0.8.1
