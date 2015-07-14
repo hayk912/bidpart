@@ -92,9 +92,7 @@ LOCALE_PATHS = (
 
 SITE_ID = 1
 
-ALLOWED_URLS = [
-'https://bidpart.herokuapp.com/'
-]
+ALLOWED_HOSTS = ['bidpart.herokuapp.com']
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
