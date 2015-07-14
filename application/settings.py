@@ -25,16 +25,16 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',              # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(SITE_ROOT, 'database.sqlite'),  # Or path to database file if using sqlite3.
-        'USER': '',                                          # Not used with sqlite3.
-        'PASSWORD': '',                                      # Not used with sqlite3.
-        'HOST': '',                                          # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                                          # Set to empty string for default. Not used with sqlite3.
-    }
-}
+#DATABASES = {
+  #  'default': {
+  #      'ENGINE': 'django.db.backends.sqlite3',              # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+ #       'NAME': os.path.join(SITE_ROOT, 'database.sqlite'),  # Or path to database file if using sqlite3.
+   #     'USER': '',                                          # Not used with sqlite3.
+ #       'PASSWORD': '',                                      # Not used with sqlite3.
+  #      'HOST': '',                                          # Set to empty string for localhost. Not used with sqlite3.
+#        'PORT': '',                                          # Set to empty string for default. Not used with sqlite3.
+    #}
+#}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -46,7 +46,7 @@ TIME_ZONE = 'Europe/Stockholm'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en'
 
-BASE_URL = 'blooming-peak-2351.herokuapp.com'
+BASE_URL = 'bidpart.herokuapp.com'
 
 DEAL_INVOICE_SENDER = ('lennart.sjoblom@bidpart.se', {
     'email': 'lennart.sjoblom@bidpart.se',
@@ -90,7 +90,11 @@ LOCALE_PATHS = (
     os.path.join(SITE_ROOT, "locale"),
 )
 
-SITE_ID = 2
+SITE_ID = 1
+
+ALLOWED_URLS = [
+'https://bidpart.herokuapp.com/'
+]
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.

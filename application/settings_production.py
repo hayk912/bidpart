@@ -1,13 +1,13 @@
-STATIC_URL = "http://blooming-peak-2351.herokuapp.com/"
+STATIC_URL = "https://bidpart.herokuapp.com/"
 MEDIA_ROOT = "/mnt/cdn/bidpart-django/media/"
-MEDIA_URL = "blooming-peak-2351.herokuapp.com"
+MEDIA_URL = "https://bidpart.herokuapp.com/medi"
 ADMIN_MEDIA_PREFIX = "/admin/"
 COMPRESS_ENABLED = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 SENDSMS_BACKEND = 'application.backends.BallouSMSBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
 # SENDSMS_BACKEND = 'sendsms.backends.locmem.SmsBackend'
-SITE_URL = 'blooming-peak-2351.herokuapp.com'
+SITE_URL = 'bidpart.herokuapp.com/'
 
 # CACHES = {
 #     'default': {
