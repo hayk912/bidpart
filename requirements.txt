@@ -31,7 +31,7 @@ django-crontab
 pytz==2012h
 phpserialize
 fabtools==0.8.1
-
+guacamole
 Babel==0.9.6
 python-memcached==1.48
 django-ckeditor
