@@ -7,7 +7,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 SENDSMS_BACKEND = 'application.backends.BallouSMSBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
 # SENDSMS_BACKEND = 'sendsms.backends.locmem.SmsBackend'
-SITE_URL = 'bidpart.herokuapp.com/'
+SITE_URL = 'bidpart.herokuapp.com'
 
 # CACHES = {
 #     'default': {
