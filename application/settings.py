@@ -11,7 +11,7 @@ DEBUG = True
 #TEMPLATE_DEBUG = DEBUG
 #TEMPLATE_DEBUG = False
 TEMPLATE_DEBUG = True
-ENVIRONMENT = "development"
+ENVIRONMENT = "production"
 
 # calculated paths for django and the site
 # used as starting points for various other paths
