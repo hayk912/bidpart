@@ -11,4 +11,6 @@ DATABASES = {
     }
 }
 
+
+
 COMPRESS_OFFLINE = False
